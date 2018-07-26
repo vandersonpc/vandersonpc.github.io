@@ -29,7 +29,7 @@ title_html: "<b>vanderson</b>pimenta"
 shortbio: "Data Scientist"
 curriculum:
     name: curriculum
-    url: https://vandersonpc.github.io/_assets/files/Vanderson_cv_EN.pdf
+    url: https://vandersonpc.github.io/files/cv_vanderson_en.pdf
 
 $brand-color: red;
 
