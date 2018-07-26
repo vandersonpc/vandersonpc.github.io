@@ -249,7 +249,6 @@ DEPENDENCIES
   academic
   github-pages
   jekyll-data
-  jekyll-feed (~> 0.6)
   tzinfo-data
 
 BUNDLED WITH
