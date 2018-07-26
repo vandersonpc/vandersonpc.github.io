@@ -16,17 +16,19 @@
 title: "Home"
 email: vandersonpc@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
- MSc in Electrical Engineering &
- Data Scientist student
+ MSc in Computer Systems, Electrical Engineer &
+ Data Science student
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vandersonpc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "vandersonpc"
 github_username:  "vandersonpc"
 linkedin_username: "vandersonpc"
 
-#Academic
+# academic
+
 title_html: "<b>vanderson</b>pimenta"
-shortbio: "Data Scientist"
+shortbio: "MSc in Computer Systems, Electrical Engineer and Data Science student."
+
 curriculum:
     name: curriculum
     url: https://vandersonpc.github.io/files/cv_vanderson_en.pdf
