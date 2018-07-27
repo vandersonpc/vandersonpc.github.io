@@ -4,7 +4,6 @@ title:  "Choose the right chart"
 date:   2018-07-27 13:47:05 -0300
 categories: charts
 ---
-
 As Data Scientists all the time we need to present the result of our work graphically. Choose the proper chart type is mandatory in order to give means to the data that we worked. Charts are a easy way to understand the data and give to it some real mean.
 
 To support on this task [Dr Andrew Abela][1] published an amazing diagram that helps to decide which chart best fit to a given dataset and problem to outcome.
