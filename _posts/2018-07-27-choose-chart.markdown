@@ -9,7 +9,7 @@ As Data Scientists all the time we need to present the result of our work graphi
 To help on this task [Dr Andrew Abela][1] published an amazing diagram to help to decide which chart best fit to a given dataset and problem to outcome.
 Below is the [Dr Abela's][2] diagram image.
  ![Chart Chooser Diagram][image-1]
-You can download a pdf version on [this link][3]. A monochrome version of this diagram is available on [this link][4].
+You can download a pdf version on [this link][3]. A monochromatic version of this diagram is available on [this link][4].
 
 Follow are some tips for the chart format:
 - No non-zero axis scale on bar charts
