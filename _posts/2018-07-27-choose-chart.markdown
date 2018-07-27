@@ -6,7 +6,7 @@ categories: charts
 ---
 
 As Data Scientists all the time we need to present the result of our work graphically. Choose the proper chart type is mandatory in order to give means to the data that we worked, and how it can generate knowledge. 
-To help on this task [Dr Andrew Abela](%20https://extremepresentation.com/design/7-charts/) published an amazing diagram to help to decide which chart best fit to a given dataset and problem to outcome.
+To help on this task [Dr Andrew Abela](https://extremepresentation.com/design/7-charts/) published an amazing diagram to help to decide which chart best fit to a given dataset and problem to outcome.
 Below is the [Dr Abela's](https://extremepresentation.com/design/7-charts/) diagram image.
  ![Chart Chooser Diagram](https://vandersonpc.github.io/img/chartchooser.jpg "Chart Chooser Diagram")
 You can download a pdf version on [this link](https://vandersonpc.github.io/files/choose_chart.pdf). A monochrome version of this diagram is available on [this link](https://vandersonpc.github.io/files/choose_chart_bw.pdf).
