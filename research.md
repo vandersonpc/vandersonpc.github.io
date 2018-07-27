@@ -14,7 +14,7 @@ Advisors [Alessandro Copetti](http://lattes.cnpq.br/5271157397202980) and [Ana P
 
 [Download](https://vandersonpc.github.io/files/dissertation.pdf)
 
-### Paper on XIII Brazilian Congress on Computational Intelligence, 2017 (_Portuguese_)
+### XIII Brazilian Congress on Computational Intelligence, 2017 (_Portuguese Paper_)
 
 _Detecção e identificação de falhas em um sistema preventor de explosões submarino (BOP)._ 
 
