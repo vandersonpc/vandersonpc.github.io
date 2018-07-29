@@ -79,3 +79,6 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.lnk
+.DS_Store
+.Ulysses-favorites.plist
+_posts/.Ulysses-Group.plist
