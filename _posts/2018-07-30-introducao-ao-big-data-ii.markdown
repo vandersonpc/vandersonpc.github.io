@@ -9,7 +9,7 @@ category: bigdata
 blog: true
 ---
 
-No [primeiro]({{ site.baseurl }}{% link _posts/2018-07-30-introducao-ao-big-data-i.markdown %}) artigo tratamos dos conceitos de dado, infomração e conhecimento. Nesse segundo artigo trataremos da história da análise de dados, e como esse conceito evoluiu ao passar do tempo.
+No [primeiro]({{ site.url }}{% link _posts/2018-07-30-introducao-ao-big-data-i.markdown %}) artigo tratamos dos conceitos de dado, infomração e conhecimento. Nesse segundo artigo trataremos da história da análise de dados, e como esse conceito evoluiu ao passar do tempo.
 
 ## Histórico
 
@@ -64,7 +64,7 @@ Além dessas três principais técnicas, existem duas  novas definições que co
 
 Abaixo uma imagem que sumariza o que vimos até aqui.
 
-![analytics-summary]({{ site.baseurl }}{% link img/analytics-summary.png %})
+![analytics-summary]({{ site.url }}{% link img/analytics-summary.png %})
 
 *fonte: http://www.supplychainshaman.com/new-technologies/infors-acquistion-of-gt-nexus-if-i-had-a-magic-wand/*
 
