@@ -13,7 +13,7 @@ No [primeiro]({{ site.url }}{% link _posts/2018-07-28-introducao-ao-big-data-i.m
 
 ## Histórico
 
-O primeiro conceito que surgiu sobre o uso da análise de dados com o objetivo de melhorar a tomada de decisão, foi **Business Intelligence** que surgiu em meados dos anos 90. Em seguida, a partir dos anos 2000, surgiu o conceito de **Business Analytics**. E a partir de 2007 temos o conceito de **Big Data**.
+O primeiro conceito que surgiu sobre o uso da análise de dados com o objetivo de melhorar a tomada de decisão foi **Business Intelligence**, que surgiu em meados dos anos 90. Em seguida, a partir dos anos 2000, surgiu o conceito de **Business Analytics**. E a partir de 2007 temos o conceito de **Big Data**.
 
 Vale ressaltar que pode haver composição entre esses termos, como por exemplo **Big Data Analytics**.
 
