@@ -34,6 +34,12 @@ Quando o conhecimento é aplicado gera saber, que nada mais é, que a aplicaçã
 ![Pirâmide de Maslow para o BigData]({{ site.url }}{% link img/maslow-bigdata.png %})
 
 
+Confira [aqui]({{ site.url }}{% link _posts/2018-07-30-introducao-ao-big-data-ii.markdown %}) o segundo artigo.
+
+
+Obrigado e até a próxima! Paz!!
+
+
 
 
 
