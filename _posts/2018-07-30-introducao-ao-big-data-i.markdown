@@ -5,7 +5,7 @@ date: 2018-07-30
 author: vandersonpc
 tags:
   - Bigdata
-category: blog
+category: bigdata
 blog: true
 ---
 
@@ -23,7 +23,7 @@ A Informação é o produto do processamento, manipulação e organização de d
 
 Um detalhe importante que devemos observar é que aquilo que é armazenado no computador **não é informação**, mas sim **dado**.
 
- \\#\# Conhecimento
+## Conhecimento
 
 O conhecimento é o conjunto de informações que o indivíduo adquire por meio da sua experiência, aprendizagem, crenças, valores e insights sobre algo no decorrer da sua trajetória. ***O conhecimento não pode ser descrito! O que é descrito é a informação***.
 
@@ -31,7 +31,7 @@ O conhecimento pode ser considerado uma informação com uma utilidade. No caso 
 
 Quando o conhecimento é aplicado gera saber, que nada mais é, que a aplicação prática do conhecimento. A imagem abaixo mostra a pirâmide [Maslow](https://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs) aplicada para o Big Data e a gestão do conhecimento.
 
-![Maslow\_BigData](https://vandersonpc.github.io/img/maslow_bigdata.png)
+![Pirâmide de Maslow para o BigData](https://vandersonpc.github.io/img/maslow_bigdata.png)
 
 
 
