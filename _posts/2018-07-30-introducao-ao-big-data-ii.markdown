@@ -59,7 +59,7 @@ As técnias relacionadas à análise de dados podem ser categorizadas em três t
 
 Além dessas três principais técnicas, existem duas  novas definições que começam a ser utilizadas na literatura. São elas: **diagnóstica** e **cognitiva**.
 
-* **Diagnóstica**: É um complemento da técnica descritiva, e busca saber o "**por que acontece?**"
+* **Diagnóstica**: É um complemento da técnica descritiva, e busca saber o "**por que aconteceu?**"
 * **Cognitiva**: É uma técnica que utiliza otimizações automatizadas e soluções que aprendem com o tempo (aprendizado de máquina). 
 
 Abaixo uma imagem que sumariza o que vimos até aqui.
