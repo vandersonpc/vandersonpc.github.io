@@ -2,10 +2,10 @@
 layout: post
 title: "Introdução ao Big Data II"
 date: 2018-07-30
-author: vandersonpc
+author: Vanderson Pimenta
 tags:
   - Bigdata 
-category: blog
+category: bigdata
 blog: true
 ---
 
@@ -25,7 +25,7 @@ Todos esses conceitos são sistemas de informação, que possuem como objetivo c
 
 Após a coleta, os dados provenientes de diversas fontes são integrados e armazenados nos **Data WareHouses** (armazém de dados). Então a esse armazém de dados são aplicadas as técnicas de **Business Intelligence** com o objetivo de verificar os objetivo da organização.
 
-![business\_intelligence](({{ site.baseurl }}{% link /img/bi.png %}))
+![business_intelligence](({{ site.baseurl }}{% link /img/bi.png %}))
 
 Uma das limitações do **Business Intelligence** é que seus benefícios são vistos apenas ao final do processo, pois somente relata os acontecimentos, uma vez que não prevê acontecimentos.
 
@@ -45,7 +45,7 @@ Nos próximos artigos exploraremos o **Big Data** com mais detalhes.
 
 As técnias relacionadas à análise de dados podem ser categorizadas em três tipos principais: **descritiva**, **prescritiva** e **preditiva**.
 
-![tecnica\_analise](({{ site.baseurl }}{% link /img/tecnicas\_analise.jpg %}))
+![tecnica_analise](({{ site.baseurl }}{% link /img/tecnicas_analise.jpg %}))
 
 *fonte: http://forums.bsdinsight.com/threads/descriptive-predictive-and-prescriptive-analytics-explained.41558/*
 
@@ -53,7 +53,7 @@ As técnias relacionadas à análise de dados podem ser categorizadas em três t
 * **Preditiva**: Utiliza modelos estatísticos e técnicas de previsão com o objetivo de entender o futuro através da análise dados recentes e históricos, para prever dados futuros, e reponder "**O que pode acontecer? Quais as tendências?**"
 * **Prescritiva**: Utiliza técnicas de otimização e algorítmos de simulação para transformar os dados em ações recomendadas, e reponder "**O que fazer?**" 
 
-![analytics\_tryangle](({{ site.baseurl }}{% link /img/analytics\_triangle.jpg %}))
+![analytics_tryangle](({{ site.baseurl }}{% link /img/analytics\_triangle.jpg %}))
 
 *fonte: http://danalytix.blogspot.com/2013/01/business-analytics-defined.html*
 
@@ -64,7 +64,7 @@ Além dessas três principais técnicas, existem duas  novas definições que co
 
 Abaixo uma imagem que sumariza o que vimos até aqui.
 
-![analytics\_summary](({{ site.baseurl }}{% link /img/analytics\_summary.png %}))
+![analytics_summary](({{ site.baseurl }}{% link /img/analytics\_summary.png %}))
 
 *fonte: http://www.supplychainshaman.com/new-technologies/infors-acquistion-of-gt-nexus-if-i-had-a-magic-wand/*
 
