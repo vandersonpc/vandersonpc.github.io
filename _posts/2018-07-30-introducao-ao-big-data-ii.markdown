@@ -45,7 +45,7 @@ Nos próximos artigos exploraremos o **Big Data** com mais detalhes.
 
 As técnias relacionadas à análise de dados podem ser categorizadas em três tipos principais: **descritiva**, **prescritiva** e **preditiva**.
 
-![tecnica_analise]({{ site.baseurl }}{% link img/tecnicas-analise.jpg %})
+![tecnica-analise](https://vandersonpc.github.io/img/tecnicas-analise.jpg)
 
 *fonte: http://forums.bsdinsight.com/threads/descriptive-predictive-and-prescriptive-analytics-explained.41558/*
 
@@ -53,7 +53,7 @@ As técnias relacionadas à análise de dados podem ser categorizadas em três t
 * **Preditiva**: Utiliza modelos estatísticos e técnicas de previsão com o objetivo de entender o futuro através da análise dados recentes e históricos, para prever dados futuros, e reponder "**O que pode acontecer? Quais as tendências?**"
 * **Prescritiva**: Utiliza técnicas de otimização e algorítmos de simulação para transformar os dados em ações recomendadas, e reponder "**O que fazer?**" 
 
-![analytics_tryangle]({{ site.baseurl }}{% link img/analytics-triangle.jpg %})
+![analytics-tryangle](https://vandersonpc.github.io/img/analytics-triangle.jpg)
 
 *fonte: http://danalytix.blogspot.com/2013/01/business-analytics-defined.html*
 
@@ -64,7 +64,7 @@ Além dessas três principais técnicas, existem duas  novas definições que co
 
 Abaixo uma imagem que sumariza o que vimos até aqui.
 
-![analytics_summary]({{ site.baseurl }}{% link img/analytics-summary.png %})
+![analytics-summary]({{ site.baseurl }}{% link img/analytics-summary.png %})
 
 *fonte: http://www.supplychainshaman.com/new-technologies/infors-acquistion-of-gt-nexus-if-i-had-a-magic-wand/*
 
