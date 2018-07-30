@@ -9,7 +9,7 @@ category: bigdata
 blog: true
 ---
 
-No [primeiro]({{ site.url }}{% link _posts/2018-07-30-introducao-ao-big-data-i.markdown %}) artigo tratamos dos conceitos de dado, infomração e conhecimento. Nesse segundo artigo trataremos da história da análise de dados, e como esse conceito evoluiu ao passar do tempo.
+No [primeiro]({{ site.url }}{% link _posts/2018-07-28-introducao-ao-big-data-i.markdown %}) artigo tratamos dos conceitos de dado, infomração e conhecimento. Nesse segundo artigo trataremos da história da análise de dados, e como esse conceito evoluiu ao passar do tempo.
 
 ## Histórico
 
