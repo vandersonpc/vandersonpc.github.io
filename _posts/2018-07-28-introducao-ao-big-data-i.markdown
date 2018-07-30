@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introdução ao Big Data I"
-date: 2018-07-30
+date: 2018-07-28
 author: Vanderson Pimenta
 tags:
   - Bigdata
