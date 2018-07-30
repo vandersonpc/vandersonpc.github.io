@@ -31,7 +31,7 @@ O conhecimento pode ser considerado uma informação com uma utilidade. No caso 
 
 Quando o conhecimento é aplicado gera saber, que nada mais é, que a aplicação prática do conhecimento. A imagem abaixo mostra a pirâmide [Maslow](https://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs) aplicada para o Big Data e a gestão do conhecimento.
 
-![Pirâmide de Maslow para o BigData](https://vandersonpc.github.io/img/maslow_bigdata.png)
+![Pirâmide de Maslow para o BigData](https://vandersonpc.github.io/img/maslow-bigdata.png)
 
 
 
