@@ -31,7 +31,7 @@ shortbio: "MSc in Computer Systems, Electrical Engineer and Data Science student
 
 curriculum:
     name: curriculum
-    url: https://vandersonpc.github.io/files/cv_vanderson_en.pdf
+    url: files/cv_vanderson_en.pdf
 
 $brand-color: red;
 
