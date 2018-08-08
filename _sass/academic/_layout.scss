@@ -82,7 +82,7 @@
       margin: 0 -$spacing-unit/2 0 -$spacing-unit/2;
       padding: 5px 5px 5px $spacing-unit/2;
       background: $grey-color-lighter;
-      text-align: left;
+      text-align: center; //left;
       @include size(small);
 
       .lang-intro {
