@@ -82,7 +82,7 @@
       margin: 0 -$spacing-unit/2 0 -$spacing-unit/2;
       padding: 5px 5px 5px $spacing-unit/2;
       background: $grey-color-lighter;
-      text-align: center; //left;
+      text-align: justify; //left;
       @include size(small);
 
       .lang-intro {
@@ -560,6 +560,8 @@
   left: calc(-50vw + 50%);
   margin-bottom: $spacing-unit;
   overflow-y: hidden;
+  // Add text alignment 
+  text-align: justify;
 
   @include media-query($on-laptop) {
     .post-meta {
