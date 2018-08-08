@@ -10,7 +10,7 @@ _Software de análise de curto circuito em sistemas de potência (Short circuit 
 
 [Github Link](https://github.com/vandersonpc/SAAC)
 
-<a href="https://github.com/{{ include.username }}/SAAC"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="username">{{ include.username }}</span></a>
+<a href="https://github.com/{{ include.username }}"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="username">{{ include.username }}</span></a>
 
 
 Programa, baseado nas linguagens de programação Delphi (FrontEnd) e MatLab (BackEnd), capaz de calcular as correntes de curto-circuito e os valores de pós-falta das tensões e correntes em todos os barramentos do sistema, para faltas simétricas e assimétricas. 
