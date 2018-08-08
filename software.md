@@ -26,4 +26,4 @@ Nas imagens abaixo, temos a janela principal  do programa e o fluxograma do mód
 
 ### Fluxograma do módulo Run-Time
 
-![run_time](https://github.com/vandersonpc/SAAC/blob/master/img/run_time.jpg)
+![run_time]({{ site.baseurl }}{% link img/run_time.jpg %})
