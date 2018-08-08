@@ -22,9 +22,9 @@ Nas imagens abaixo, temos a janela principal  do programa e o fluxograma do mód
 
 ### Janela Principal do Programa
 
-![main_window](https://github.com/vandersonpc/SAAC/img/main_window.jpg)
+![main_window](https://github.com/vandersonpc/SAAC/blob/master/img/main_window.jpg)
 
 ### Fluxograma do módulo Run-Time
 
-![run_time](https://github.com/vandersonpc/SAAC/img/run_time.jpg)
+![run_time](https://github.com/vandersonpc/SAAC/blob/master/img/run_time.jpg)
 
