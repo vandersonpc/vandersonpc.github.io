@@ -18,7 +18,7 @@ This MIDI controller can control the follow function on the stompboxes:
 3. Activate the pedal tuner
 4. Control pedal loop features
 
-GitHub Repositpry [here][1] [![alt text][1.1]][1]
+Binary and source code can be found on the GitHub repository [here][1] [![alt text][1.1]][1]
 
 [1]: http://www.github.com/vandersonpc/m9midi
 [1.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
