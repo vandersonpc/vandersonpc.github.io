@@ -15,15 +15,15 @@ This MIDI controller can control the follow function on the stompboxes:
 
 ### Physical Proposal Layout
 
-![image](https://github.com/vandersonpc/m9midi/img/midi9.png)
+![image](https://github.com/vandersonpc/m9midi/blob/master/img/midi9.png)
 
 ### Schematic Layout
 
-![image](https://github.com/vandersonpc/m9midi/schematic/m9midibrd.png)
+![image](https://github.com/vandersonpc/m9midi/blob/master/schematic/m9midibrd.png)
 
 ### User's Manual
 
-For more details check the user's manual [here](https://github.com/vandersonpc/m9midi/manual/m9_midi_manual.pdf).
+For more details check the user's manual [here](https://github.com/vandersonpc/m9midi/blob/master/manual/m9_midi_manual.pdf).
 
 ### License 
 
