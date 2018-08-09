@@ -3,8 +3,8 @@ layout: page
 title: Projects
 ---
 
-[](#pic-projects)
-[](#arduino-projects)
+* [PIC Projects](#pic-projects)
+* [Arduino Projects](#arduino-projects)
 
 # PIC Projects
 ## MIDI Controller for Line6 M9 and M13 stompboxes
