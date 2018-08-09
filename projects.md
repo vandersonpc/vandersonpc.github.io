@@ -2,7 +2,12 @@
 layout: page
 title: Projects
 ---
-# MIDI Controller for Line6 M9 and M13 stompboxes
+
+[](#pic-projects)
+[](#arduino-projects)
+
+# PIC Projects
+## MIDI Controller for Line6 M9 and M13 stompboxes
 
 MIDI controller based on microntroller **PIC 12F675**. The source code was developed with [BoostC compiler](http://www.sourceboost.com/Products/BoostC/Overview.html).
 
@@ -29,3 +34,4 @@ For more details check the user's manual [here](https://github.com/vandersonpc/m
 
 This project is supplied "AS IS" for individual use only. Comercial use is not authorized.  
 
+# Arduino Projects
