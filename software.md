@@ -8,7 +8,7 @@ permalink: /software/
 
 _Software de análise de curto circuito em sistemas de potência (Short circuit analysis software)_
 
-GitHub Repositpry [here][1] [![alt text][1.1]][1]
+GitHub Repository [here][1] [![alt text][1.1]][1]
 
 [1]: http://www.github.com/vandersonpc/SACC
 [1.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
