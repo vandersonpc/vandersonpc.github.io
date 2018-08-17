@@ -49,7 +49,7 @@ layout: default
         <h2>Recent Posts</h2>
         <ul class="posts">  
             {% for post in site.posts limit:5 %}  
-               <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>  
+               <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>  
             {% endfor %}  
         </ul>
     </div>
