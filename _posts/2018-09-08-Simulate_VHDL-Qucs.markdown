@@ -48,6 +48,7 @@ The circuit that we’ll simulate is a simple AND digital gate.
 ![]({{ site.url }}{% link img/new_text_file.png %})
 
 4. Now you can enter your VHDL code for the AND gate. The code source is below.
+
 ```
 -------
 --- Project: AND Gate VHDL simualation
@@ -67,6 +68,7 @@ begin
   x <= a and b;
 end hardware;
 ```
+
 5.  Click the **Save **button or select the menu **File \> Save as.. ** use as file name the save name of the HDL entity. i.e. **andGate.vhdl**. After saved the editor will enable the syntax color highlighting which is very useful.
 
 ![]({{ site.url }}{% link img/vhdl_code.png %})
