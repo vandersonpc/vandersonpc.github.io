@@ -35,11 +35,13 @@ May will be necessary to install the gcc5 compiler as well.
 ```
 
 ## 2. Simulate you first VHDL code
-The first circuit that we’ll simulate is a simple AND digital gate.
+The circuit that we’ll simulate is a simple AND digital gate.
+
 1. Start QUCS
-2. As soon the main screen showed up will create a new empty project. To create new project click the **New Project** menu item on the Project main menu. 
-	Give the name andGate for you new project and click on **Create** button.
-	 ![](new_project.png)
+
+2. As soon the main screen showed up will create a new empty project. To create new project click the **New Project** menu item on the Project main menu.Give the name andGate for you new project and click on **Create** button.
+![]({{ site.url }}{% link img/new_project.png %})
+
 3. Select **New Text **on the **File **menu. A empty text file screen will be opened.
 ![](new_text_file.png)
 
