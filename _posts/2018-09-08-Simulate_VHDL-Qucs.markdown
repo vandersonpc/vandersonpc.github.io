@@ -49,7 +49,7 @@ The circuit that we’ll simulate is a simple AND digital gate.
 
 4. Now you can enter your VHDL code for the AND gate. The code source is below.
 
-```
+```vhdl
 -------
 --- Project: AND Gate VHDL simualation
 ---
