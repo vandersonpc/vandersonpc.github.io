@@ -92,8 +92,14 @@ figure {
 img {
   vertical-align: middle;
   max-width: 100%;
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(5px 5px 5px #222);
+
+  // Shadow
+  
+    -webkit-box-shadow: 0px 0px 20px 2px #33A7F4;
+    -moz-box-shadow: 0px 0px 20px 2px #33A7F4;
+    -ms-box-shadow: 0px 0px 20px 2px #33A7F4;
+    -o-box-shadow: 0px 0px 20px 2px #33A7F4;
+    box-shadow: 0px 0px 20px 2px #33A7F4;
 }
 
 /**
@@ -101,8 +107,11 @@ img {
  */
 figure > img {
   display: block;
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(5px 5px 5px #222);
+    -webkit-box-shadow: 0px 0px 20px 2px #33A7F4;
+    -moz-box-shadow: 0px 0px 20px 2px #33A7F4;
+    -ms-box-shadow: 0px 0px 20px 2px #33A7F4;
+    -o-box-shadow: 0px 0px 20px 2px #33A7F4;
+    box-shadow: 0px 0px 20px 2px #33A7F4;
   //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
