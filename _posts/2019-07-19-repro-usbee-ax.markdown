@@ -11,7 +11,7 @@ It’s a guide to reprogram your cheap USBee device to use it with the Saleae So
 (img)(img)
 
 ### To achieve that , some tools need to be installed as below:
-
+'
 $ sudo aptitude install fxload
 $ sudo aptitude install libusb-1.0-0-dev
 $ git clone https://github.com/ribalda/fx2eeprom.git
