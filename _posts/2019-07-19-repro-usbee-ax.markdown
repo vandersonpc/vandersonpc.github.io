@@ -32,7 +32,7 @@ Bus 001 Device 017: ID 08a9:0014 CWAV Inc. USBee AX-Pro
 ```
 sudo fxload -D /dev/bus/usb/001/017 -t fx2lp -I vend_ax.hex
 ```
-### Read and save the first 8 bytes from the eeprom to a file
+### Read and save the first 8 bytes from the device eeprom to a file
 ```
 sudo ./fx2eeprom r 0x08a9 0x0014 8 > eeprom.dat
 ```
@@ -50,7 +50,7 @@ $ hexdump -C eeprom.dat
 00000000  c0 25 09 81 38 00 1b 00                        |.%..8...|
 00000008
 ```
-### Wirete the new eeprom values
+### Write the new values to device eeprom
 ```
 $ cat eeprom.dat | sudo ./fx2eeprom w 0x08a9 0x0014 8
 ```
