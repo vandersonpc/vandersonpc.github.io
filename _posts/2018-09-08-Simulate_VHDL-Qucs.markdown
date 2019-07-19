@@ -5,7 +5,6 @@ date:   2018-09-08 13:47:05 -0300
 author: Vanderson Pimenta
 categories: VHDL
 ---
-# Simulate FPGA VHDL using QUCS for free
 
 Qucs is a free open source electronic multiplataform circuit simulator that can be used to simulate analog and digital electronic circuits. Qucs is fully integrated to the [FreeHDL](http://freehdl.seul.org) that’s a free VHDL compiler/simulator.
 
