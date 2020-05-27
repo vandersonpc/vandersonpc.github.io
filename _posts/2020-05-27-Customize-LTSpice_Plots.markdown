@@ -22,7 +22,7 @@ Each colour on the LTSpice environment has a number associated to it, from 1 to 
 
 The picture below shown the main colours available on LTSpice [1..13]. 
 
-![](lt_colours.png) 
+![]({{ site.url }}{% link img/lt_colours.png %})
 
 Example:
 
