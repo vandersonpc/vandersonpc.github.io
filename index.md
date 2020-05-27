@@ -3,7 +3,7 @@ title: Vanderson Pimenta
 layout: about
 invisible: true
 ---
-An electrical engineer fascinated by the data science world!
+I'm electrical/electronic engineer fascinated by the data science world!
 
 
 I'm currently a **Machine Learning** student at [University of West of England](https://www.uwe.ac.uk) in Bristol/UK.
