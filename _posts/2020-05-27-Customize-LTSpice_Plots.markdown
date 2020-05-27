@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Custom Plot with LTSpice"
-date:   2020-09-08 13:47:05 0000
+date:   2020-05-27 13:47:05 0000
 author: Vanderson Pimenta
 categories: Electronic, LTSpice, Simulation, Plot
 ---
@@ -37,7 +37,7 @@ Red   | 4
 
 As colours, LTSpice uses numbers to identify the line type as below.
 
-![](lt_lines.png)
+![]({{ site.url }}{% link img/lt_lines.png %})
 
 Line Type | Value
 --- | ---
@@ -144,9 +144,9 @@ On this example the Plot Configuration file is edited to show the EMC limit line
 
 This configuration file generate the following plot
 
-![](lt_plot1.png)
+![]({{ site.url }}{% link img/lt_plot1.png %})
 
-The LTSpice simulation files for this example can be downloaded [Here](lt_emc_test.zip)
+The LTSpice simulation files for this example can be downloaded [Here]({{ site.url }}{% link files/lt_emc_test.zip %})
 
 ### Ex. 2 - Low Pass Filter
 
@@ -173,13 +173,13 @@ On this example the Plot Configuration file is edited to show the -3dB and Cut f
 
 This configuration file generate the following plot
 
-![](lt_plot2.png)
+![]({{ site.url }}{% link img/lt_plot2.png %})
 
-The LTSpice simulation files for this example can be downloaded [Here](lt_lp_filter.zip)
+The LTSpice simulation files for this example can be downloaded [Here]({{ site.url }}{% link files/lt_lp_filter.zip %})
 
 #Tools
 
-A spreadsheet to help to calculate the Line: and Text: coordinates can be download [here]().
+A spreadsheet to help to calculate the Line: and Text: coordinates can be download [here]({{ site.url }}{% link files/LTSpice-Limit-Lines-Calculator.xlsx %}).
 
 #Conclusion
 
