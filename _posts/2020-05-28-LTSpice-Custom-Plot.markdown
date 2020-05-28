@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Custom Plot with LTSpice"
-date:   2020-05-27 13:47:05 +0000
+title:  "Reprogramming cheeper USBee AX Pro Logic Analyser "
+date:   2020-05-28 10:47:05 -0300
 author: Vanderson Pimenta
-categories: Electronic, LTSpice, Simulation, Plot
+categories: Simulation, Electronic, Guides
 ---
 
 LTSpice is a largely used simulation tool for electronics. However, when required to export the plots generated on the simulations, it lacks some customisation and configuration flexibility. 
