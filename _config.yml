@@ -37,7 +37,7 @@ $brand-color: red;
 
 # Build settings
 markdown: kramdown
-remote_theme: vandersonpc/getsby
+remote_theme: vandersonpc/gatsby
  
 plugins:
   - jekyll-feed
