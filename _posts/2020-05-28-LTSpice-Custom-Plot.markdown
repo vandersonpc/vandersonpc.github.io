@@ -63,7 +63,7 @@ Example: Blue text on Left: 256 + 3 = 259
 
 # Plot configuration file elements
 
-###1. Lines  
+### 1. Lines  
 
 Lines are defined by the syntax below:
 
@@ -81,7 +81,7 @@ The same Line syntax is applied for Rectangles, Circles and Arrows.
 Just Replace “Line: “ by “Rectangle: “, “Circle: “ or “Arrow: “
 
 
-###2. Text
+### 2. Text
 
 To add text to the plot via Plot configuration file use the following syntax:
 
@@ -96,7 +96,7 @@ Text: "dB" 515 (3000000,316227.766016838); DIFFERENTIAL MODE
 
 On the example above the vertical unit is in dB, Text in blue right aligned, X is in Hertz and the Y is defined as 10^(value_db/20).
 
-###3. GridStyle
+### 3. GridStyle
 
 Syntax:
 ```
@@ -177,10 +177,10 @@ This configuration file generate the following plot
 
 The LTSpice simulation files for this example can be downloaded [Here]({{ site.url }}{% link files/lt_lp_filter.zip %})
 
-#Tools
+# Tools
 
 A spreadsheet to help to calculate the Line: and Text: coordinates can be download [here]({{ site.url }}{% link files/LTSpice-Limit-Lines-Calculator.xlsx %}).
 
-#Conclusion
+# Conclusion
 
 LTSpice is an excellent tool that can be improved with simple tricks. Know how the software uses the Plot Configuration give the possibility to create very complex and visual appealing plots.  
