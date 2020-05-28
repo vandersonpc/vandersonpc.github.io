@@ -5,6 +5,7 @@ date:   2019-07-19 10:47:05 -0300
 author: Vanderson Pimenta
 categories: USB, Electronic, Guides
 ---
+
 It’s a guide to reprogram your cheap USBee device to use it with the Saleae Software Logic, the USB VID/PID need to be changed. The guide is applicable for LINUX OS only.
 
 ![]({{ site.url }}{% link img/usbee_ax_pro.png %})
