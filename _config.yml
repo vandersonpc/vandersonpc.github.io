@@ -37,8 +37,8 @@ $brand-color: blue;
 
 # Build settings
 markdown: kramdown
-remote_theme: vandersonpc/academic
- 
+#remote_theme: vandersonpc/academic
+theme: academic 
 plugins:
   - jekyll-feed
 
