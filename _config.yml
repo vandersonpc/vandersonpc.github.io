@@ -33,7 +33,7 @@ curriculum:
     name: curriculum
     url: files/cv_vanderson_en.pdf
 
-$brand-color: red;
+$brand-color: blue;
 
 # Build settings
 markdown: kramdown
