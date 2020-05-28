@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reprogramming cheeper USBee AX Pro Logic Analyser "
+title:  "Create LTSpice Custom Plot "
 date:   2020-05-28 10:47:05 -0300
 author: Vanderson Pimenta
 categories: Simulation, Electronic, Guides
