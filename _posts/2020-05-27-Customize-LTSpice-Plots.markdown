@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Custom Plot with LTSpice"
-date:   2020-05-27 13:47:05 0000
+date:   2020-05-27 13:47:05 +0000
 author: Vanderson Pimenta
 categories: Electronic, LTSpice, Simulation, Plot
 ---
