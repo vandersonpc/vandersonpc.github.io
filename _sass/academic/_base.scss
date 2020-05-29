@@ -238,27 +238,30 @@ pre {
  * Table
  */
 
-table {
-  margin: auto;
-  border-collapse: collapse;
+ table {
+   margin: 10px;
+
+   border-collapse: collapse;
+
   @include size(small);
 
+   th {
+     border-bottom: 1px solid $text-color;
+     text-align: center;
+     padding: 5px;
+   }
 
-  th {
-    border-bottom: 1px solid $text-color;
-    padding: 5px;
-  }
+   td {
+     padding: 5px;
+     vertical-align: center;
+   }
+ }
 
-  td {
-    padding: 5px;
-  }
-}
-
-h1 + table, h2 + table,
-h3 + table, h4 + table,
-h5 + table, h6 + table {
-  margin-top: $spacing-unit / 2;
-}
+ h1 + table, h2 + table,
+ h3 + table, h4 + table,
+ h5 + table, h6 + table {
+   /*margin-top: $spacing-unit / 2;*/
+ }
 
 /**
  * Hr
@@ -285,6 +288,7 @@ hr {
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
+
   @extend %clearfix;
 
   @include media-query($on-laptop) {

@@ -6,21 +6,21 @@ author: Vanderson Pimenta
 categories: Simulation, Electronic, Guides
 ---
 
-LTSpice is a largely used simulation tool for electronics. However, when required to export the plots generated on the simulations, it lacks some customisation and configuration flexibility. 
+LTSpice is a largely used simulation tool for electronics. However, when required to export the plots generated on the simulations, it lacks some customisation and configuration flexibility.
 
-Either the MacOs or Windows version of the software have the tools add text, lines, rectangles and circles to the Plot. As well, a Plot Configuration file (*.plt), which holds all plot display configuration can be saved for reuse. 
- 
-Editing the plot configuration file give the possibility to create plots with a nice visual appearance and annotate them with complex information. 
+Either the MacOs or Windows version of the software have the tools add text, lines, rectangles and circles to the Plot. As well, a Plot Configuration file (*.plt), which holds all plot display configuration can be saved for reuse.
 
-To be able to edit the plot configuration file first some understand of how LTSpice save information to the plot configuration file is required. 
+Editing the plot configuration file give the possibility to create plots with a nice visual appearance and annotate them with complex information.
+
+To be able to edit the plot configuration file first some understand of how LTSpice save information to the plot configuration file is required.
 
 Various customisations can be done on the Plot Configuration file that are not described on this article. However, it can give a very good starting point.
 
 # Colour Numbers
 
-Each colour on the LTSpice environment has a number associated to it, from 1 to 13. 
+Each colour on the LTSpice environment has a number associated to it, from 1 to 13.
 
-The picture below shown the main colours available on LTSpice [1..13]. 
+The picture below shown the main colours available on LTSpice [1..13].
 
 ![]({{ site.url }}{% link img/lt_colours.png %})
 
@@ -51,13 +51,13 @@ Dash Dot Dot | 4
 
 Text alignment value is a combination of alignment type value and colour number.
 
-Alignment | Value + Colour |
---- | --- 
-| Left:	| 256  + Color # | 
-| Right: 	| 512  + Color # |
-| Center: | 4096 + Color # |
-| Top: 	| 1024 + Color # |
-| Bottom: | 2048 + Color # |
+Alignment | Value + Colour
+--- | ---
+ Left:	| 256  + Color #
+ Right: 	| 512  + Color #
+ Center: | 4096 + Color #
+ Top: 	| 1024 + Color #
+ Bottom: | 2048 + Color # 
 
 Example: Blue text on Left: 256 + 3 = 259
 
@@ -77,7 +77,7 @@ Line: "dB" 4 0 (9000,316227.766016838) (50000,316227.766016838)
 
 On the example above the vertical unit is in dB, Colour is red, Line type is Solid, X start/end is in Hertz and the Y start/End is defined as 10^(value_db/20).
 
-The same Line syntax is applied for Rectangles, Circles and Arrows. 
+The same Line syntax is applied for Rectangles, Circles and Arrows.
 Just Replace “Line: “ by “Rectangle: “, “Circle: “ or “Arrow: “
 
 
@@ -102,8 +102,8 @@ Syntax:
 ```
 GridStyle <NUMBER>
 ```
- 
- Number | Status 
+
+ Number | Status
 --- | ---
 0 | grid off
 1 | grig on

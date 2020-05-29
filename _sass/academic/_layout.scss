@@ -300,68 +300,67 @@
  * Site footer
  */
 
-.site-footer {
-  @include size(vsmall);
-  border-top: 1px solid $grey-color-light;
-  color: $grey-color;
+ .site-footer {
+   @include size(vsmall);
+   border-top: 1px solid $grey-color-light;
+   color: $grey-color;
+   a {
+     color: $grey-color;
+   }
 
-  a {
-    color: $grey-color;
-  }
+   .footer-col {
+     list-style: none;
+     margin-left: 0;
+     margin-top: $spacing-unit/2;
+     margin-bottom: $spacing-unit;
 
-  .footer-col {
-    list-style: none;
-    margin-left: 0;
-    margin-top: $spacing-unit/2;
-    margin-bottom: $spacing-unit;
+     .author, .author a {
+       color: $grey-color-light;
+     }
+   }
 
-    .author, .author a {
-      color: $grey-color-light;
-    }
-  }
+   .footer-col-1 {
+     width: -webkit-calc(65% - (#{$spacing-unit} / 2));
+     width:         calc(65% - (#{$spacing-unit} / 2));
+     float: left;
+   }
 
-  .footer-col-1 {
-    width: -webkit-calc(65% - (#{$spacing-unit} / 2));
-    width:         calc(65% - (#{$spacing-unit} / 2));
-    float: left;
-  }
+   .footer-col-2 {
+     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+     width:         calc(35% - (#{$spacing-unit} / 2));
+     float: right;
+   }
 
-  .footer-col-2 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-    float: right;
-  }
+   .single-col {
+     clear: both;
+     list-style: none;
+     margin: 0;
+     text-align: center;
 
-  .single-col {
-    clear: both;
-    list-style: none;
-    margin: 0;
-    text-align: center;
+     li {
+       display: inline-block;
+       margin-left: 5px;
+       margin-right: 5px;
+     }
 
-    li {
-      display: inline-block;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
+     .username {
+       display: none;
+     }
 
-    .username {
-      display: none;
-    }
+     svg {
+       width: 20px;
+       height: 20px;
+     }
 
-    svg {
-      width: 20px;
-      height: 20px;
-    }
-
-    .icon {
-      &:hover {
-        circle,
-        path:last-of-type {
-          fill: $text-color;
-        }
-      }
-    }
-  }
+     .icon {
+       &:hover {
+         circle,
+         path:last-of-type {
+           fill: $text-color;
+         }
+       }
+     }
+   }
 
   .nav-list-title,
   .contact-list-title {
