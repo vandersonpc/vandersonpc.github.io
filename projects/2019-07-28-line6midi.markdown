@@ -1,0 +1,31 @@
+---
+layout: page
+title: Line6 M5/M13 MIDI Controller 
+invisible: true
+---
+
+MIDI controller based on microcontroller **PIC 12F675**. The source code was developed with [BoostC compiler](http://www.sourceboost.com/Products/BoostC/Overview.html).
+
+This MIDI controller can control the following function on the stompboxes:
+
+1. Scenes up and down feature
+2. Switch between folders
+3. Activate the pedal tuner
+4. Control pedal loop features
+
+Binary and source code can be found on the GitHub repository [here][1] [![alt text][1.1]][1]
+
+[1]: http://www.github.com/vandersonpc/m9midi
+[1.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
+
+#### Physical Proposal Layout
+
+![]({{ site.url }}{% link img/midi9.png %})
+
+#### Schematic Layout
+
+![]({{ site.url }}{% link img/m9midibrd.png %})
+
+#### User's Manual
+
+For more details check the user's manual [here](files/m9_midi_manual.pdf).

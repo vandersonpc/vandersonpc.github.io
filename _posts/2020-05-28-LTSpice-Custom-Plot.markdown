@@ -57,7 +57,7 @@ Alignment | Value + Colour
  Right: 	| 512  + Color #
  Center: | 4096 + Color #
  Top: 	| 1024 + Color #
- Bottom: | 2048 + Color # 
+ Bottom: | 2048 + Color #
 
 Example: Blue text on Left: 256 + 3 = 259
 
