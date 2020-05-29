@@ -1,10 +1,10 @@
 ---
-title: Vanderson Pimenta
+title: Vanderson Carvalho
 layout: about
 invisible: true
 ---
-I'm electrical/electronic engineer fascinated by the data science world!
+I do electrical & electronic things and sometimes write about it here. 
 
+I'm Electrical/Electronic Engineer living in UK 🇬🇧 who loves to create and build things. 🛠🤓
 
-I'm currently a **Machine Learning** student at [University of West of England](https://www.uwe.ac.uk) in Bristol/UK.
-Former student at [Universidade Federal Fluminense](http://www.uff.br) in Brazil, where I got my Master's in **Computer Systems**.
+Currently doing Electrical and Electronic Design @ [Baker Hughes](http://www.bakerhughes.com)

@@ -15,9 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 title: "Home"
 email: vandersonpc@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
- MSc in Computer Systems, Electrical Engineer &
- Data Science student
+#description: >- # this means to ignore newlines until "baseurl:"
+# MSc in Computer Systems, Electrical Engineer &
+# Data Science student
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vandersonpc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "vandersonpc"
@@ -26,19 +26,19 @@ linkedin_username: "vandersonpc"
 
 # academic
 
-title_html: "<b>vanderson</b>pc"
-shortbio: "MSc in Computer Systems, Electrical Engineer and Data Science student."
+title_html: "<b>vanderson</b>carvalho"
+#shortbio: "MSc in Computer Systems, Electrical Engineer and Data Science student."
 
 curriculum:
     name: curriculum
     url: files/cv_vanderson_en.pdf
 
-$brand-color: red;
+$brand-color: #42f45c;
 
 # Build settings
 markdown: kramdown
-remote_theme: vandersonpc/academic
- 
+#remote_theme:
+theme: academic
 plugins:
   - jekyll-feed
 

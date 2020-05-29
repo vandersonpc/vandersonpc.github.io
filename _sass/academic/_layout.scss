@@ -534,7 +534,7 @@
     font-size: $small-font-size;
     font-family: $alt-font-family;
     font-weight: 200;
-    color: $grey-color;
+    //color: $grey-color;
   }
 
   .post-thumbnail-wrapper {
@@ -560,7 +560,7 @@
   left: calc(-50vw + 50%);
   margin-bottom: $spacing-unit;
   overflow-y: hidden;
-  // Add text alignment 
+  // Add text alignment
   text-align: justify;
 
   @include media-query($on-laptop) {
@@ -586,7 +586,7 @@
   }
 
   .wrapper {
-    background: rgba(255, 255, 255, 0.9);
+  //  background: rgba(255, 255, 255, 0.9);
     margin-top: $spacing-unit;
     padding-bottom: 0;
     padding-top: 0;
@@ -797,3 +797,5 @@
 .invisible {
   display: none;
 }
+
+.highlighter-rouge { background-color: #e2decf }

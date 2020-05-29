@@ -4,36 +4,9 @@
 
   <div class="wrapper">
 
-      <ul class="footer-col footer-col-1">
-        <li>
-          {% include _i18n/sitetitle.html %}
 
-        {% if site.author_display %}
-        <span class="author">
-          {{ i18n.by[plang] }}
-          {% if site.author_website %}
-          <a target="_blank" href="{% include _i18n/i18n.html value=site.author_website %}">{{ site.author }}</a>
-          {% else %}
-          {{ site.author }}
-          {% endif %}
-        </span>
-        </li>
-        {% endif %}
 
-        {% if site.description %}
-        <li>{% include _i18n/i18n.html value=site.description %}</li>
-        {% endif %}
 
-      </ul>
-
-      {% if site.pitch %}
-        <nav>
-        {% include nav_menu.html class="footer-col footer-col-2"%}
-        {% include contactlist.html class="single-col" %}
-        </nav>
-      {% else %}
-        {% include contactlist.html class="footer-col footer-col-2" %}
-      {% endif %}
 
     <div class="bottom">
 
@@ -52,7 +25,7 @@
       ({% if oldest != newest %}{{ oldest }}-{% endif %}{{ newest }})
       {% if site.author and site.author_display %}
         {{ i18n.legal[plang][0] }}
-        <a target="_blank" href="{% include _i18n/i18n.html value=site.author_website %}">{{ site.author }}</a> 
+        <a target="_blank" href="{% include _i18n/i18n.html value=site.author_website %}">{{ site.author }}</a>
       {% endif %}
       {% if site.cc %}
         {{ i18n.legal[plang][1] }}
@@ -71,4 +44,3 @@
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 {% endif %}
-

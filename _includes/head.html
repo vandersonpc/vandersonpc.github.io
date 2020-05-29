@@ -17,7 +17,9 @@
   {% else %}
   <meta name="description" content="{% include _i18n/i18n.html value=site.description %}">
   {% endif %}
-
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abel" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Istok+Web" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Antic" />
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{% include _i18n/i18n.html value=site.title %}" href="{{ "/feed.xml" | relative_url }}">
@@ -74,4 +76,3 @@
   {% if jekyll.environment == 'production' %}
   {% endif %}
 </head>
-
