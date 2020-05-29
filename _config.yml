@@ -33,12 +33,12 @@ curriculum:
     name: curriculum
     url: files/cv_vanderson_en.pdf
 
-$brand-color: #42f45c;
+$brand-color: #29bfff;
 
 # Build settings
 markdown: kramdown
-#remote_theme:
-theme: academic
+remote_theme: vandersonpc/academic
+
 plugins:
   - jekyll-feed
 
