@@ -1,5 +1,5 @@
 ---
-title: Vanderson Carvalho
+title: 
 layout: about
 invisible: true
 ---
