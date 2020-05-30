@@ -13,11 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Home"
+title: "Vanderson Carvalho web site"
 email: vandersonpc@gmail.com
-#description: >- # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines until "baseurl:"
+  Here you found my Electronic & Electrical Things.
 # MSc in Computer Systems, Electrical Engineer &
 # Data Science student
+tagline: Electronic & Electrical Stuff.
+author: Vanderson Carvalho
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vandersonpc.com" # ""https://vandersonpc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "vandersonpc"
@@ -43,6 +46,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-sitemap
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

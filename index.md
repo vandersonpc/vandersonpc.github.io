@@ -1,7 +1,9 @@
 ---
-title: Vanderson Carvalho
+title: MyWebsite Home Page
 layout: about
 invisible: true
+description: "Here you found my Electronic & Electrical Things."
+author: Vanderson Carvalho
 ---
 >
 
