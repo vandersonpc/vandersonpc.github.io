@@ -53,3 +53,5 @@ This article shows how to use the Arduino Pro Mini as a ISP (In-Circuit Serial P
 PS: replace the ```/dev/cu.SLAB_USBtoUART```option by the serial port to be used.
 
 The avrdude software documentation can be downloaded [Here](http://download.savannah.gnu.org/releases/avrdude/)
+
+More information to how to use an Arduino as ISP can be found [Here](https://www.arduino.cc/en/Tutorial/ArduinoISP)
