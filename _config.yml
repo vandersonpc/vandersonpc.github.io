@@ -19,14 +19,14 @@ email: vandersonpc@gmail.com
 # MSc in Computer Systems, Electrical Engineer &
 # Data Science student
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://vandersonpc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://vandersonpc.com" # ""https://vandersonpc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "vandersonpc"
 github_username:  "vandersonpc"
 linkedin_username: "vandersonpc"
 
 # academic
 
-title_html: "<b>vandersonpc</b>.github.com"
+title_html: "<b>vandersonpc</b>.com"
 #shortbio: "MSc in Computer Systems, Electrical Engineer and Data Science student."
 
 curriculum:
