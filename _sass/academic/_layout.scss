@@ -719,7 +719,7 @@
 
 .user-picture {
   border-radius: 50%;
-  max-width: calc(85%);
+  max-width: calc(85%);//calc(85%);
 }
 
 .about-col-1 {
@@ -797,4 +797,4 @@
   display: none;
 }
 
-.highlighter-rouge { background-color: #e2decf }
+.highlighter-rouge { background-color: $grey-color-lighter}//#e2decf }

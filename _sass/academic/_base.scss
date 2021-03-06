@@ -188,7 +188,7 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 5%);
+    color: $brand-color;//darken($brand-color, 5%);
   }
 
   &:hover {
