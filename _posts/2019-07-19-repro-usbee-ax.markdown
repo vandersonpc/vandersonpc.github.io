@@ -3,12 +3,14 @@ layout: post
 title:  "Reprogramming cheeper USBee AX Pro Logic Analyser "
 date:   2019-07-19 10:47:05 -0300
 author: Vanderson Pimenta
-categories: USB, Electronic, Guides
+categories: [Electronic, Guides, Test Equipment]
+tags: [logic analyser, usb]
+image: images/usbee_la_fp.png
 ---
 
 It’s a guide to reprogram your cheap USBee device to use it with the Saleae Software Logic, the USB VID/PID need to be changed. The guide is applicable for LINUX OS only.
 
-![]({{ site.url }}{% link img/usbee_ax_pro.jpg %})
+![]({{ site.url }}{% link images/usbee_ax_pro.jpg %})
 
 ### To achieve that , some tools need to be installed as below:
 ```

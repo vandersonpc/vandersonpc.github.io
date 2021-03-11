@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Use Arduino as ISP on MacOs"
-date: 2020-05-29
-author: Vanderson Pimenta
-tags:
-  - Electronic, Arduino
+title: Use Arduino as ISP on MacOs
+date: 2020-05-29 18:05:55 +0000
+categories: [Electronic, Microcontrollers, Tools]
+tags: [arduino, MacOs]
+
+image: images/arduino_isp_mac_fp.png
+author: Vanderson Carvalho
 ---
 
 This article shows how to use the Arduino Pro Mini as a ISP (In-Circuit Serial Programmer) for AVR microcontrollers or another Arduino board.
@@ -50,7 +52,7 @@ This article shows how to use the Arduino Pro Mini as a ISP (In-Circuit Serial P
 	```bash
 	avrdude -p m328p -P /dev/cu.SLAB_USBtoUART -c avrisp  -V -b 38400 -U flash:w:TransistorTester.hex -U eeprom:w:TransistorTester.eep 
 	```
-PS: replace the ```/dev/cu.SLAB_USBtoUART```option by the serial port to be used.
+PS: replace the ```/dev/cu.SLAB_USBtoUART``` option by the serial port to be used.
 
 The avrdude software documentation can be downloaded [Here](http://download.savannah.gnu.org/releases/avrdude/)
 

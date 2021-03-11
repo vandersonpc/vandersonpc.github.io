@@ -2,8 +2,10 @@
 layout: post
 title:  "Choose the right chart"
 date:   2018-07-27 13:47:05 -0300
-author: Vanderson Pimenta
-categories: charts
+author: Vanderson Carvalho
+categories: [Data Science]
+tags: [charts, tips]
+image: images/choose_chart_fp.png
 ---
 Engineers often need to present the result of a work graphically. Choose the proper chart type is mandatory in order to give means to the data. Charts are an easy way to understand the data and give to it some real mean.
 
@@ -35,4 +37,4 @@ I hope that post be useful! Peace!!!🖖🏻
 [5]:	http://labs.juiceanalytics.com/chartchooser/index.html
 [6]:	https://chandoo.org/wp/chart-selection-process/
 
-[image-1]:	https://vandersonpc.github.io/img/chartchooser.jpg "Chart Chooser Diagram"
+[image-1]:{{ site.url }}{% link images/chartchooser.jpg %}

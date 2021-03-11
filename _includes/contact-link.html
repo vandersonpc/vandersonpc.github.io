@@ -1,0 +1,31 @@
+<div class="contact">
+  <ul class="contact__list list-reset">
+    {% if site.author.email %}
+      <li><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-open"></i></a></li>
+    {% else %} {% endif %}
+
+    {% if site.author.twitter %}
+      <li><a href="{{ site.author.twitter }}"><i class="fab fa-twitter"></i></a></li>
+    {% else %} {% endif %}
+
+    {% if site.author.facebook %}
+      <li><a href="{{ site.author.facebook }}"><i class="fab fa-facebook-square"></i></a></li>
+    {% else %} {% endif %}
+
+    {% if site.author.dribbble %}
+      <li><a href="{{ site.author.dribbble }}"><i class="ion ion-logo-dribbble"></i></a></li>
+    {% else %} {% endif %}
+
+    {% if site.author.instagram %}
+      <li><a href="{{ site.author.instagram }}"><i class="ion ion-logo-instagram"></i></a></li>
+    {% else %} {% endif %}
+
+    {% if site.author.pinterest %}
+      <li><a href="{{ site.author.pinterest }}"><i class="ion ion-logo-pinterest"></i></a></li>
+    {% else %} {% endif %}
+
+    {% if site.author.github %}
+      <li><a href="{{ site.author.github }}"><i class="fab fa-github"></i></a></li>
+    {% else %} {% endif %}
+  </ul>
+</div>

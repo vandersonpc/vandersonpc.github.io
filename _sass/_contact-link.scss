@@ -1,0 +1,22 @@
+.list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  .contact__list {
+    li {
+      margin-left: 12px;
+      display: inline-block;
+
+      a {
+        font-size: 18px;
+        color: $gray;
+        &:hover {
+          color: $dark;
+        }
+      }
+    }
+  }
+}

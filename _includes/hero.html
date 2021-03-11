@@ -1,0 +1,32 @@
+<!-- begin c-hero -->
+<div class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-9 col-2 last-item">
+        <div class="hero__content">
+          <h1 class="hero__title">{{ site.author.say-hello }}</h1>
+          <p class="hero__subtitle">{{ site.author.bio }}</p>
+          <div class="hero__social">
+            <span class="hero__social-title">Follow Me |</span>
+            {% include contact-link.html %}
+          </div>
+        <div class="hero__social">
+          <span class="hero__social-title">My Curriculum |</span>
+          {% if site.author.curriculum %}
+            <div class="contact">
+            <ul class="contact__list list-reset">
+            <li><a href="{{ site.author.curriculum }}"><i class="fa fa-file-pdf-o"></i></a></li>
+          {% else %} {% endif %}
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="hero__image">
+          <img src="{{site.baseurl}}{{ site.author.image }}" alt="">
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end hero -->
