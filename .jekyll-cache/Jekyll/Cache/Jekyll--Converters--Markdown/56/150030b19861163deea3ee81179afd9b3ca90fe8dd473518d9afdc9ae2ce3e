@@ -1,0 +1,58 @@
+I"�<!-- begin c-hero -->
+<div class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-9 col-2 last-item">
+        <div class="hero__content">
+          <h1 class="hero__title">Hello 👋🏼, I’m <strong>Vanderson Carvalho</strong></h1>
+          <p class="hero__subtitle"><br />I do <b>Electrical</b> &amp; <b>Electronic</b> things and sometimes write about it here.<br />I'm Electrical/Electronic Engineer living in UK 🇬🇧 who loves to create and build things.🛠🤓.<br />Currently doing Electrical and Electronic Design @ <a href="http://www.bakerhughes.com">Baker Hughes</a>.</p>
+          <div class="hero__social">
+            <span class="hero__social-title">Follow Me |</span>
+            <div class="contact">
+  <ul class="contact__list list-reset">
+    
+      <li><a href="mailto:vandersonpc@gmail.com"><i class="fa fa-envelope-open"></i></a></li>
+    
+
+    
+      <li><a href="https://twitter.com/pc_vanderson"><i class="fab fa-twitter"></i></a></li>
+    
+
+    
+      <li><a href="https://facebook.com/vandersonpc"><i class="fab fa-facebook-square"></i></a></li>
+    
+
+     
+
+     
+
+     
+
+    
+      <li><a href="https://github.com/vandersonpc"><i class="fab fa-github"></i></a></li>
+    
+  </ul>
+</div>
+
+          </div>
+        <div class="hero__social">
+          <span class="hero__social-title">My Curriculum |</span>
+          
+            <div class="contact">
+            <ul class="contact__list list-reset">
+            <li><a href="/files/cv_vanderson_en.pdf"><i class="fa fa-file-pdf-o"></i></a></li>
+          
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="hero__image">
+          <img src="/images/van.png" alt="" />
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end hero -->
+:ET

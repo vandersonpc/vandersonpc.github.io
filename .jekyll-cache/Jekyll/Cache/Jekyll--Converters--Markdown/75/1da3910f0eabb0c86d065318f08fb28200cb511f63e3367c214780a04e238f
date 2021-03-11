@@ -1,0 +1,25 @@
+I")<p>MIDI controller based on microcontroller <strong>PIC 12F675</strong>. The source code was developed with <a href="http://www.sourceboost.com/Products/BoostC/Overview.html">BoostC compiler</a>.</p>
+
+<p>This MIDI controller can control the following function on the stompboxes:</p>
+
+<ol>
+  <li>Scenes up and down feature</li>
+  <li>Switch between folders</li>
+  <li>Activate the pedal tuner</li>
+  <li>Control pedal loop features</li>
+</ol>
+
+<p>Binary and source code can be found on the GitHub repository <a href="http://www.github.com/vandersonpc/m9midi">here</a> <a href="http://www.github.com/vandersonpc/m9midi"><img src="http://i.imgur.com/0o48UoR.png (github icon with padding)" alt="alt text" /></a></p>
+
+<h4 id="physical-proposal-layout">Physical Proposal Layout</h4>
+
+<p><img src="/images/midi9.png" alt="" /></p>
+
+<h4 id="schematic-layout">Schematic Layout</h4>
+
+<p><img src="/images/m9midibrd.png" alt="" /></p>
+
+<h4 id="users-manual">User’s Manual</h4>
+
+<p>For more details check the user’s manual <a href="files/m9_midi_manual.pdf">here</a>.</p>
+:ET

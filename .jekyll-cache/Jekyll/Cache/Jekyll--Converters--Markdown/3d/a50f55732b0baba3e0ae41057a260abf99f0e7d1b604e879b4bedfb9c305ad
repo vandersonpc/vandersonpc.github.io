@@ -1,0 +1,199 @@
+I"�+<p>Qucs is a free open source electronic multiplataform circuit simulator that can be used to simulate analog and digital electronic circuits. Qucs is fully integrated to the <a href="http://freehdl.seul.org">FreeHDL</a> that’s a free VHDL compiler/simulator.</p>
+
+<h2 id="1-installation">1. Installation</h2>
+<p>The first step is download and install Qucs. Click <a href="http://qucs.sourceforge.net">here</a> to download. 
+Next step is install the FreeHDL application. How to perform this step depends of your operational system.</p>
+
+<h3 id="windows">Windows</h3>
+<p>For windows users all packets need are available on that <a href="https://sourceforge.net/projects/qucs/files/freehdl/">link</a>.</p>
+<h3 id="linux">Linux</h3>
+<p>For linux users for debian based distribution, use apt-get to install the package.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>$ sudo apt-get install freehdl
+</pre></td></tr></tbody></table></code></pre></div></div>
+<h3 id="macos">MacOs</h3>
+<p>For MacOs users use brew application installer to get install the package.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="c"># brew tap guitorri/tap</span>
+<span class="c"># brew unlink libtool &amp;&amp; brew install libtool # was failing to update under gcc-5~</span>
+<span class="c"># HOMEBREW_CC=gcc-5 HOMEBREW_CXX=g++-5 brew install freehdl++</span>
+<span class="c"># brew link libtool</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>May will be necessary to install the gcc5 compiler as well.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="c"># brew install gcc@5</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="2-simulate-you-first-vhdl-code">2. Simulate you first VHDL code</h2>
+<p>The circuit that we’ll simulate is a simple AND digital gate.</p>
+
+<ol>
+  <li>
+    <p>Start QUCS</p>
+  </li>
+  <li>
+    <p>As soon the main screen showed up will create a new empty project. To create new project click the <strong>New Project</strong> menu item on the Project main menu.Give the name andGate for you new project and click on <strong>Create</strong> button.</p>
+  </li>
+</ol>
+
+<p><img src="/images/new_project.png" alt="" /></p>
+
+<ol>
+  <li>Select <strong>New Text </strong>on the <strong>File </strong>menu. A empty text file screen will be opened.</li>
+</ol>
+
+<p><img src="/images/new_text_file.png" alt="" /></p>
+
+<ol>
+  <li>Now you can enter your VHDL code for the AND gate. The code source is below.</li>
+</ol>
+
+<div class="language-vhdl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="c1">-------</span>
+<span class="c1">--- Project: AND Gate VHDL simualation</span>
+<span class="c1">---</span>
+<span class="c1">--- 2018 by Vanderson Pimenta &lt;vandersonpc@gmail.com&gt;</span>
+<span class="c1">-------</span>
+<span class="k">library</span> <span class="n">ieee</span><span class="p">;</span>
+<span class="k">use</span> <span class="n">ieee</span><span class="o">.</span><span class="n">std_logic_1164</span><span class="o">.</span><span class="k">all</span><span class="p">;</span>
+
+<span class="k">entity</span> <span class="n">andGate</span> <span class="k">is</span>
+  <span class="k">port</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="k">in</span> <span class="kt">std_logic</span><span class="p">;</span>
+		<span class="n">x</span>    <span class="p">:</span> <span class="k">out</span> <span class="kt">std_logic</span><span class="p">);</span>
+<span class="k">end</span> <span class="n">andGate</span><span class="p">;</span>
+
+<span class="k">architecture</span> <span class="n">hardware</span> <span class="k">of</span> <span class="n">andGate</span> <span class="k">is</span>
+<span class="k">begin</span>
+  <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">a</span> <span class="ow">and</span> <span class="n">b</span><span class="p">;</span>
+<span class="k">end</span> <span class="n">hardware</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<ol>
+  <li>Click the <strong>Save </strong>button or select the menu <strong>File &gt; Save as.. </strong> use as file name the save name of the HDL entity. i.e. <strong>andGate.vhdl</strong>. After saved the editor will enable the syntax color highlighting which is very useful.</li>
+</ol>
+
+<p><img src="/images/vhdl_code.png" alt="" /></p>
+
+<ol>
+  <li>Now select or create an untitled schematic. Select on left pane <strong>Components</strong> and on the dropdown menu select <strong>digital components</strong>. On the digital components list select the <strong>VHDL file</strong> component.</li>
+</ol>
+
+<p><img src="/images/vhdl_file.png" alt="" /></p>
+
+<ol>
+  <li>Double click on the new VHDL file component and browse to select your vhdl code. Change the component name to match you VHDL device. Click OK.</li>
+</ol>
+
+<p><img src="/images/select_vhdl_file.png" alt="" /></p>
+
+<ol>
+  <li>Click on menu <strong>Insert &gt; Insert Ports</strong> . Connect all ports for you schematic. Double click on each port and change it type for <strong>in</strong> or <strong>out</strong> depending on the port function. For this specific schematic port <strong>a</strong> and <strong>b</strong> are inputs and <strong>x</strong> is an output. Uncheck <strong>display in schematic </strong>check box for the variable <strong>Num</strong> for each port. Rename the ports for match to the VHDL entity ports (a, b and x).</li>
+</ol>
+
+<p><img src="/images/vhdl_component.png" alt="" /></p>
+
+<ol>
+  <li>Right click in the component and select <strong>Edit Circuit Symbol</strong>. using the text tool create the port name text (a, b and x) drag it close to each correspondent pin as below. Right click in the component and select again the <strong>Edit Circuit Symbol</strong> option to back to the schematic. Finally Save it and give the file the same name as the entity (i.e.: andGate.sch).</li>
+</ol>
+
+<p><img src="/images/edit_component.png" alt="" /></p>
+
+<ol>
+  <li>Everything up to this point has been to create a sub-circuit, from our VHDL code, that can be simulated in a digital circuit. We can now assemble this digital circuit.</li>
+  <li>Left click on <strong>New</strong> schematic tool or menu <strong>File &gt; New</strong>.</li>
+  <li>Select the <strong>Components </strong>tab in the left window. Select <strong>file component</strong> in the top drop-box and add a <strong>Subcircuit</strong> component to the schematic windows.</li>
+</ol>
+
+<p><img src="/images/subcircuit.png" alt="" /></p>
+
+<ol>
+  <li>Double click on the file component and browse to select your circuit saved on the <strong>step 9</strong>. Change the sub circuit name to <strong>andGate</strong>. Click OK.</li>
+</ol>
+
+<p><img src="/images/load_subcircuit.png" alt="" /></p>
+
+<ol>
+  <li>Now the new component should be loaded as below.</li>
+</ol>
+
+<p><img src="/images/final_component.png" alt="" /></p>
+
+<ol>
+  <li>In the <strong>Components</strong> tab of the left window, select <strong>digital components</strong> from the top drop-down box. Select <strong>digital source</strong> located at the top of the resulting list. Add two digital sources next to each sub circuit input. Rename each digital source to match the port name. Uncheck <strong>display in schematic </strong>check box for the variable <strong>Num</strong> for each digital source. Add a wire and name for the port x. You should have some thing like image below.</li>
+</ol>
+
+<p><img src="/images/sim_circuit.png" alt="" /></p>
+
+<ol>
+  <li>Now double click on the digital source <strong>a</strong> and change its <strong>times</strong> parameter to <strong>2ns; 2ns</strong>. Click OK.</li>
+</ol>
+
+<p><img src="/images/dsb_times.png" alt="" /></p>
+
+<ol>
+  <li>Under the <strong>Components</strong> tab in the left window, select <strong>simulations</strong> from the drop-down box. Add a <strong>digital simulation</strong> component into your circuit. Double click on the digital simulation component and change the property <strong>Type</strong> to <strong>TimeList</strong> instead <strong>TruthTable</strong>. Change the <strong>time</strong> parameter to <strong>3</strong>  <code class="language-plaintext highlighter-rouge">1 + 2</code> ( sum of all digital sources times).</li>
+</ol>
+
+<p><img src="/images/ds_time.png" alt="" /></p>
+
+<ol>
+  <li>Now it’s time to save the schematic. Use a proper name like <strong>andGateSimulation.sch</strong>.</li>
+  <li>Press <strong>F2</strong> function key to start the simulation. If errors occurred, you must correct them and re-simulate. If the simulation is successful, a new blank window will open. This window will be used to display our simulation results.</li>
+  <li>With the Components tab selected in the left window, and diagrams selected from the top drop-down box, all of Qucs’ simulation output displays are visible. The proper display to select is governed by the type of circuit simulated. For digital circuits, both <strong>Truth Table</strong> and <strong>Timing Diagram</strong> are appropriate choices.</li>
+</ol>
+
+<p><img src="/images/diagrams.png" alt="" /></p>
+
+<ol>
+  <li>First add a <strong>Truth Table</strong> diagram. Add the x.X value to the Truth Table the click OK.</li>
+</ol>
+
+<p><img src="/images/truthtable_opt.png" alt="" /></p>
+
+<ol>
+  <li>You should see the follow Truth Table on the screen.</li>
+</ol>
+
+<p><img src="/images/truthtable.png" alt="" /></p>
+
+<ol>
+  <li>Now it’s time to add a <strong>Timing Diagram</strong>. Select the input itens to display like the image below. Click OK.</li>
+</ol>
+
+<p><img src="/images/timedisplay_opt.png" alt="" /></p>
+
+<ol>
+  <li>On the schematic screen you should see a timing diagram as the picture below.</li>
+</ol>
+
+<p><img src="/images/timediagram.png" alt="" /></p>
+
+<ol>
+  <li>Examination of the resulting truth table and diagram reveal that our VHDL code produces the correct output for all combinations of input.</li>
+</ol>
+
+<h2 id="3-conclusion">3. Conclusion</h2>
+<p>This article showed how we can use a free and open source tool to simulate VHDL/FPGA code. All the simulation results match with VHDL code previously create. Thus we can see that Qucs is easy and very powerful to simulate VHDL / FPGA. But of course, more complex circuits can be simulated as need.</p>
+
+<p>See you soon! Peace!!!🖖🏻</p>
+:ET

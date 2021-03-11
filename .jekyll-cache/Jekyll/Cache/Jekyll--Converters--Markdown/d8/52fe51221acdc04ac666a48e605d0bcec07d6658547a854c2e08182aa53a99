@@ -1,0 +1,83 @@
+I"�<p>It’s a guide to reprogram your cheap USBee device to use it with the Saleae Software Logic, the USB VID/PID need to be changed. The guide is applicable for LINUX OS only.</p>
+
+<p><img src="/images/usbee_ax_pro.jpg" alt="" /></p>
+
+<h3 id="to-achieve-that--some-tools-need-to-be-installed-as-below">To achieve that , some tools need to be installed as below:</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>$ sudo aptitude install fxload
+$ sudo aptitude install libusb-1.0-0-dev
+$ git clone https://github.com/ribalda/fx2eeprom.git
+$ cd fx2eeprom
+$ make
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="identify-the-usb-bus-and-device-numbers">Identify the USB bus and device numbers</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>$ lsusb
+...
+Bus 001 Device 017: ID 08a9:0014 CWAV Inc. USBee AX-Pro
+...
+</pre></td></tr></tbody></table></code></pre></div></div>
+<h3 id="flash-the-device">Flash the device</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>sudo fxload -D /dev/bus/usb/001/017 -t fx2lp -I vend_ax.hex
+</pre></td></tr></tbody></table></code></pre></div></div>
+<h3 id="read-and-save-the-first-8-bytes-from-the-device-eeprom-to-a-file">Read and save the first 8 bytes from the device eeprom to a file</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>sudo ./fx2eeprom r 0x08a9 0x0014 8 &gt; eeprom.dat
+</pre></td></tr></tbody></table></code></pre></div></div>
+<h3 id="edit-the-vidpid-from-the-dump-file-with-your-favorite-hex-editor">Edit the VID/PID from the dump file with your favorite hex editor</h3>
+
+<ul>
+  <li>Before edition
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>$ hexdump -C eeprom.dat.bak 
+00000000  c0 a9 08 14 00 00 1b 00                        |........|
+00000008
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>After edition
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>$ hexdump -C eeprom.dat
+00000000  c0 25 09 81 38 00 1b 00                        |.%..8...|
+00000008
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="write-the-new-values-to-device-eeprom">Write the new values to device eeprom</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>$ cat eeprom.dat | sudo ./fx2eeprom w 0x08a9 0x0014 8
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="unplug--plug-you-usbee-device">Unplug &amp; plug you USBee device</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>$ lsusb
+...
+Bus 001 Device 019: ID 0925:3881 Lakeview Research Saleae Logic
+...
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Now enjoy your new logic analyser!</p>
+
+<p>Remember, it’s a cheap device. Don’t expected to have a perfect sampling above 1MHz. It’s good for PIC, Arduino and not critical device work.</p>
+
+<p>See you soon! Peace!!!🖖🏻</p>
+:ET
