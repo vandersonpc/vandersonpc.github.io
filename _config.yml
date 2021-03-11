@@ -4,7 +4,7 @@ title: "Vandersonpc Web Site"
 description: "Electronics"
 logo: 'images/vpc_logo.png'
 favicon: 'images/page_favicon.png'
-baseurl:
+baseurl: "https://vandersonpc.com"
 google_analytics: 'UA-46278016-1'
 #disqus:
 #mailchimp-list: #
