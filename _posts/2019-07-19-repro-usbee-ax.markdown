@@ -6,11 +6,11 @@ author: Vanderson Pimenta
 categories: [Electronic, Guides, Test Equipment]
 tags: [logic analyser, usb]
 image: images/usbee_la_fp.png
+show_image: True
 ---
 
 It’s a guide to reprogram your cheap USBee device to use it with the Saleae Software Logic, the USB VID/PID need to be changed. The guide is applicable for LINUX OS only.
 
-![]({{ site.url }}{% link images/usbee_ax_pro.jpg %})
 
 ### To achieve that , some tools need to be installed as below:
 ```

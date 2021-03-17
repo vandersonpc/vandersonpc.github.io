@@ -4,9 +4,9 @@ title: Use Arduino as ISP on MacOs
 date: 2020-05-29 18:05:55 +0000
 categories: [Electronic, Microcontrollers, Tools]
 tags: [arduino, MacOs]
-
 image: images/arduino_isp_mac_fp.png
 author: Vanderson Carvalho
+show_image: True
 ---
 
 This article shows how to use the Arduino Pro Mini as a ISP (In-Circuit Serial Programmer) for AVR microcontrollers or another Arduino board.

@@ -6,6 +6,7 @@ author: Vanderson Carvalho
 categories: [Data Science]
 tags: [charts, tips]
 image: images/choose_chart_fp.png
+show_image: True
 ---
 Engineers often need to present the result of a work graphically. Choose the proper chart type is mandatory in order to give means to the data. Charts are an easy way to understand the data and give to it some real mean.
 

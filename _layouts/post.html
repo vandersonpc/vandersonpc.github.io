@@ -39,7 +39,9 @@ post_class: post-template
                 {% endif %}
 
                 <!-- Post Title -->
+                {% if page.show_image != true %}
                 <h1 class="posttitle">{{ page.title }}</h1>
+                {% endif %}
 
             </div>
 

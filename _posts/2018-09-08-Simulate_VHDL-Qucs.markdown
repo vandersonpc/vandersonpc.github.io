@@ -6,6 +6,7 @@ author: Vanderson Carvalho
 categories: [Electronic, Simulation, Tools]
 Tags: [vhdl, qucs]
 image: images/qucs_vhdl_fp.png
+show_image: True
 ---
 
 Qucs is a free open source electronic multiplataform circuit simulator that can be used to simulate analog and digital electronic circuits. Qucs is fully integrated to the [FreeHDL](http://freehdl.seul.org) that’s a free VHDL compiler/simulator.
