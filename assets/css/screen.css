@@ -330,10 +330,11 @@ span.post-read-more a:hover {
 }
 
 .article-post {
-    font-family: Merriweather;
-    font-size: 1.1rem;
+    font-family: Georgia;// "Quattrocento", sans-serif;sans-serif;// ;//Merriweather;
+    font-size: 1rem;//1.1rem;
     line-height: 1.84;
     color: rgba(0, 0, 0, .8);
+
 }
 
 blockquote {
@@ -346,6 +347,13 @@ blockquote {
 .article-post p,
 .article-post blockquote {
     margin: 0 0 1.5rem 0;
+    /* Add By VPC*/
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .featured-image {
@@ -700,8 +708,14 @@ h6 {
 .article-post h4,
 .article-post h5,
 .article-post h6 {
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+  font-weight: 700;
+//    margin-bottom: 1.5rem;
+height:2.5rem;
+font-size: 1.5em;
+margin:0.67em 0
+    .sans-serif {
+  font-family: 'Quattrocento Sans', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+}
 }
 
 .article-post img.shadow {
@@ -721,6 +735,7 @@ h6 {
 
 img {
     max-width: 100%;
+    border-radius: 1px;
 }
 
 .bottompagination span.navigation {

@@ -18,7 +18,7 @@ post_class: post-template
         <!-- Post -->
         {% assign author = site.author %}
 
-        <div class="col-md-9 flex-first flex-md-unordered">
+        <div class="col-md-10 flex-first flex-md-unordered shadow modal-body" style="border-radius: 10px;">
             <div class="mainheading">
 
                 <!-- Author Box
@@ -58,7 +58,7 @@ post_class: post-template
             {% if site.lazyimages == "enabled" %}
             <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
             {% else %}
-            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            <img class="featured-image img-fluid pl-md-2 pr-md-2" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
             {% endif %}
 
             {% endif %}
@@ -66,7 +66,7 @@ post_class: post-template
             <!-- End Featured Image -->
 
             <!-- Post Content -->
-            <div class="article-post">
+            <div class="article-post pl-md-2 pr-md-2 text-justify">
                 <!-- Toc if any -->
                 {% if page.toc %}
                     {% if page.beforetoc %}
@@ -79,6 +79,7 @@ post_class: post-template
                 {% endif %}
                 <!-- End Toc -->
                 {{content}}
+                <hr>
             </div>
 
             <!-- Rating -->
