@@ -6,7 +6,7 @@ logo: 'images/vpc_logo.png'
 favicon: 'images/page_favicon.png'
 baseurl: "" #"https://www.vandersonpc.com"
 url: ""
-google_analytics: 'G-R556RWD8G6'
+google_analytics: 'UA-195302705-1'
 #disqus:
 #mailchimp-list: #
 include: ["_pages"]
