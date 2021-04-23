@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reprogramming cheeper USBee AX Pro Logic Analyser "
+title:  "Reprogramming cheap USBee AX Pro Logic Analyser "
 date:   2019-07-19 10:47:05 -0300
 author: Vanderson Pimenta
 categories: [Electronic, Guides, Test Equipment]
@@ -20,7 +20,7 @@ $ git clone https://github.com/ribalda/fx2eeprom.git
 $ cd fx2eeprom
 $ make
 ```
- 
+
 ### Identify the USB bus and device numbers
 
 ```
@@ -41,9 +41,9 @@ sudo ./fx2eeprom r 0x08a9 0x0014 8 > eeprom.dat
 ```
 ### Edit the VID/PID from the dump file with your favorite hex editor
 
-* Before edition 
+* Before edition
 ```
-$ hexdump -C eeprom.dat.bak 
+$ hexdump -C eeprom.dat.bak
 00000000  c0 a9 08 14 00 00 1b 00                        |........|
 00000008
 ```
@@ -59,7 +59,7 @@ $ hexdump -C eeprom.dat
 $ cat eeprom.dat | sudo ./fx2eeprom w 0x08a9 0x0014 8
 ```
 
-### Unplug & plug you USBee device 
+### Unplug & plug you USBee device
 ```
 $ lsusb
 ...
