@@ -5,7 +5,7 @@ License: https://www.wowthemes.net/freebies-license/
 */
 @media screen and (min-width:1500px) {
     html { font-size:18px; } /* Increase the font size on higher resolutions */
-    .container {max-width:80%;}
+    .container {max-width:95%;}
 }
 .mainheading {
     padding: 1rem 0rem;
@@ -50,13 +50,13 @@ pre {
 
 .site-content {
     min-height: 60vh;
-    padding-top: 1.5rem;
+    padding-top: 3.5rem;
     margin-top: 57px;
     transition: all 0.4s;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 section.recent-posts {
@@ -80,7 +80,7 @@ section.recent-posts {
 
 .article-post ol,
 .article-post ul {
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
 }
 
 .article-post ol ol,
@@ -310,7 +310,9 @@ span.post-read-more a:hover {
 
 .mainheading h1.posttitle {
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0px;
+    padding-left: 0.4rem;
+    font-size: 1.8rem;
 }
 
 .footer {
@@ -329,12 +331,11 @@ span.post-read-more a:hover {
     color: rgba(0, 0, 0, .8);
 }
 
-.article-post {
+.article-post { // Font changed on 02/04/2022 by VPC
     font-family: Georgia;// "Quattrocento", sans-serif;sans-serif;// ;//Merriweather;
-    font-size: 1rem;//1.1rem;
-    line-height: 1.84;
+    font-size: 0.9rem;//1.1rem;
+    line-height: 1.2rem;//1.84;
     color: rgba(0, 0, 0, .8);
-
 }
 
 blockquote {
@@ -346,7 +347,7 @@ blockquote {
 
 .article-post p,
 .article-post blockquote {
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 15px 0; // Change text paragraph space
     /* Add By VPC*/
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -709,7 +710,7 @@ h6 {
 .article-post h5,
 .article-post h6 {
   font-weight: 700;
-//    margin-bottom: 1.5rem;
+      margin-bottom: 0px;
 height:2.5rem;
 font-size: 1.5em;
 margin:0.67em 0
@@ -736,8 +737,22 @@ margin:0.67em 0
 img {
     max-width: 100%;
     border-radius: 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+del {
+  display: block;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  padding:0;
+  color:grey;
+  font-size:0.8em;
+  font-style:italic
+
+}
 .bottompagination span.navigation {
     display: block;
     font-size: 0.93rem;

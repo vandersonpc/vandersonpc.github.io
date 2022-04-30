@@ -65,9 +65,14 @@ ga('send', 'pageview');
     <div class="container pr-0">
 
     <!-- Begin Logo -->
+    <div>
     <a class="navbar-brand" href="{{ site.baseurl }}/">
     <img src="{{ site.baseurl }}/{{site.logo}}" alt="{{ site.name }}">
     </a>
+    <p >
+        {{ site.description }}
+    </p>
+    </div>
     <!-- End Logo -->
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,6 +114,7 @@ ga('send', 'pageview');
     </div>
 
     </div>
+
 </nav>
 <hr>
 <!-- End Navigation
@@ -119,7 +125,14 @@ ga('send', 'pageview');
 <div class="container">
 
 <!-- Site Title
-================================================== -->
+==================================================
+<div class="mainheading">
+    <h1 class="sitetitle">{{ site.name }}</h1>
+    <p class="lead">
+        {{ site.description }}
+    </p>
+</div>
+ -->
 
 
 <!-- Content
@@ -178,7 +191,7 @@ ga('send', 'pageview');
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }}
+                Copyright © {{ site.time | date: "%Y" }} by {{ site.name }}
             </div>
 
         </div>

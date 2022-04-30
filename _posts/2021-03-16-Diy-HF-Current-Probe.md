@@ -6,7 +6,8 @@ author: Vanderson Carvalho
 categories: [EMC, Projects]
 tags: [tools, tips, diy]
 image: images/diy_cp_probe_fp.png
-show_image: True
+show_image: False
+comments: True
 ---
 Current probes are a valuable tool for EMC/EMI issues troubleshooting. Current probes are basically high frequency current transformers used to measure the common mode current (CM) through a conductor or cable. There are many commercial options available costing from hundreds up to thousands of dollars/pounds/etc. In this article, I will show you how to build your own HF current probe for a few bucks. Even such a simple and inexpensive tool can enabling you to get start troubleshooting EMC/EMI issues. 
 

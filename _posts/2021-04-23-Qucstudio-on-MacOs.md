@@ -6,7 +6,8 @@ author: Vanderson Carvalho
 categories: [Electronic, Simulation, Tools]
 tags: [macos, qucs]
 image: images/qucs_on_mac/qucsstudio_macos_fp.png
-show_image: True
+show_image: False
+comments: True
 ---
 QUCS ([http://qucs.sourceforge.net](http://qucs.sourceforge.net)) is a great free and open source circuit simulator. It specially useful to simulate RF and High Frequency circuits. QUCS also can run natively in most operational systems. However, the QUCS project looks to be on hold and is not updated for quite some time now (2017). 
 

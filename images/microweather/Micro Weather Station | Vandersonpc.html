@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/images/page_favicon.png">
+
+<title>Micro Weather Station | Vandersonpc</title>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Micro Weather Station | Vanderson Web Site</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Micro Weather Station" />
+<meta name="author" content="Vanderson Carvalho" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The weather in UK can be very unpredictable to say the least 😄. Temperature and forecast checks are mandatory every morning to help to decide, (1) you do need an umbrella, (2) how much cover do we need for the cold. That’s why I has been thinking to design and build an outdoor weather station for about a year, and never had the chance (and the time) to do so until now." />
+<meta property="og:description" content="The weather in UK can be very unpredictable to say the least 😄. Temperature and forecast checks are mandatory every morning to help to decide, (1) you do need an umbrella, (2) how much cover do we need for the cold. That’s why I has been thinking to design and build an outdoor weather station for about a year, and never had the chance (and the time) to do so until now." />
+<link rel="canonical" href="http://localhost:4000/How-is-the-Weather/" />
+<meta property="og:url" content="http://localhost:4000/How-is-the-Weather/" />
+<meta property="og:site_name" content="Vanderson Web Site" />
+<meta property="og:image" content="http://localhost:4000/images/micro_weather/microweather_fp.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-04-01T04:00:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/images/micro_weather/microweather_fp.png" />
+<meta property="twitter:title" content="Micro Weather Station" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Vanderson Carvalho"},"dateModified":"2022-04-01T04:00:00+01:00","datePublished":"2022-04-01T04:00:00+01:00","description":"The weather in UK can be very unpredictable to say the least 😄. Temperature and forecast checks are mandatory every morning to help to decide, (1) you do need an umbrella, (2) how much cover do we need for the cold. That’s why I has been thinking to design and build an outdoor weather station for about a year, and never had the chance (and the time) to do so until now.","headline":"Micro Weather Station","image":"http://localhost:4000/images/micro_weather/microweather_fp.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/How-is-the-Weather/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/vpc_logo.png"},"name":"Vanderson Carvalho"},"url":"http://localhost:4000/How-is-the-Weather/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!--
+<link rel="stylesheet" href="/assets/css/screen.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+-->
+<link href="/assets/css/screen.css" rel="stylesheet">
+
+<link href="/assets/css/main.css" rel="stylesheet">
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-195302705-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-195302705-1');
+</script>
+
+</head>
+
+
+
+
+<body class="layout-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+================================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <div>
+    <a class="navbar-brand" href="/">
+    <img src="/images/vpc_logo.png" alt="Vandersonpc">
+    </a>
+    <p >
+        Electronics, technology, and whatever
+    </p>
+    </div>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Home</a>
+                </li>
+
+								<li class="nav-item">
+								<a class="nav-link" href="/publication">Publications</a>
+								</li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/archives">Archives</a>
+                </li>
+
+                <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+
+</nav>
+<hr>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+<div class="container">
+
+<!-- Site Title
+==================================================
+<div class="mainheading">
+    <h1 class="sitetitle">Vandersonpc</h1>
+    <p class="lead">
+        Electronics, technology, and whatever
+    </p>
+</div>
+ -->
+
+
+<!-- Content
+================================================== -->
+<div class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-sm-1 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Micro Weather Station&url=http://localhost:4000/How-is-the-Weather/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/How-is-the-Weather/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/How-is-the-Weather/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+
+        </div>
+
+        <!-- Post -->
+        
+
+        <div class="col-xl-10 flex-first flex-md-unordered shadow modal-body" style="border-radius: 10px;">
+            <div class="mainheading">
+
+                <!-- Author Box
+                
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                        
+                        <img class="author-thumb" src="/assets/images/avatar.png" alt="Vanderson Carvalho">
+                        
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <a target="_blank" class="link-dark" href="">Vanderson Carvalho</a><a target="_blank" href="https://twitter.com/pc_vanderson" class="btn follow">Follow</a>
+                        <span class="author-description"></span>
+                    </div>
+                </div>
+                
+
+                <!-- Post Title -->
+                
+                <h1 class="posttitle">Micro Weather Station</h1>
+                
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+            
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post pl-md-2 pr-md-2 text-justify">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p>The weather in UK can be very unpredictable to say the least 😄. Temperature and forecast checks are mandatory every morning to help to decide, (1) you do need an umbrella, (2) how much cover do we need for the cold. 
+That’s why I has been thinking to design and build an outdoor weather station for about a year, and never had the chance (and the time) to do so until now.</p>
+
+<p>The goal is to have a very simple outdoor weather station with basic sensors (temperature, atmospheric pressure, etc.) connected to home wifi network, showing the sensor readings in real time.</p>
+
+<h1 id="design-premises">Design premises</h1>
+
+<p>The design premises for the weather stations are:</p>
+
+<ol>
+  <li>Simple to build and maintain</li>
+  <li>Able to resists to the elements (Rain, wind, etc.)</li>
+  <li>Sun light powered</li>
+  <li>Based on Arduino compatible hardware and software</li>
+  <li>Connected to the wifi network to transmit data</li>
+</ol>
+
+<h1 id="esp-01-the-brain">ESP-01 (The Brain)</h1>
+
+<p>As the main component of the weather station, the microcontroller needs to read the sensors, connect and transmit the data over the internet. For this task I’ve chosen the <strong>ESP8266 ESP-01</strong> due its flexibility, size and low cost.</p>
+
+<p><img src="http://localhost:4000/images/microweather/esp-01.jpg" alt="" width="400" /> 
+<del>ESP-01 Wifi module</del></p>
+
+<p>The <strong>ESP-01</strong> is a Self-contained SOC (System On a Chip) module based on the <strong>ESP8266</strong> microchip, which is a low-cost Wi-Fi microchip, with built-in TCP/IP networking software, and microcontroller capability. And best of all, fully compatible with Arduino development.</p>
+
+<p><img src="http://localhost:4000/images/microweather/esp8266.jpg" alt="" width="400" /> 
+<del>ESP8266 integrated Circuit</del></p>
+
+<h1 id="power-from-the-sunlight">Power from the sunlight</h1>
+
+<p>To power the station I’ve chosen a <strong>Samsung 18650</strong> rechargeable battery, which can supply 3.6VDC @ 2500 mAh.</p>
+
+<p><img src="http://localhost:4000/images/microweather/18650.jpg" alt="" width="400" /></p>
+
+<p><del>Samsung 18650 battery</del></p>
+
+<p>As the ESP-01 module maximum supply voltage is 3.3V, and also during the charging the battery voltage can reach up 4.2V, a <strong>MCP1700-3302E</strong> 3.3V regulator was used to regulate the supply voltage to the ESP-01 module<sup id="fnref:a" role="doc-noteref"><a href="#fn:a" class="footnote" rel="footnote">1</a></sup>.</p>
+
+<p><img src="http://localhost:4000/images/microweather/mcp1700.jpg" alt="" width="200" /></p>
+
+<p><del>Microchip MCP1700-3302E 3.3V voltage regulator</del></p>
+
+<p>A <strong>TC4056</strong> module was used to charge the battery. This module is able to charge the battery via a micro USB connection, or via an external supply connected to the + and - terminals.</p>
+
+<p>The external supply terminals were connected to a 180mmx180mm Solar panel to allow the solar powered battery charging.</p>
+
+<p><img src="http://localhost:4000/images/microweather/tc4056.jpg" alt="" width="400" /></p>
+
+<p><del>TC4056 charging module</del></p>
+
+<h1 id="sensors">Sensors</h1>
+
+<p>The key components of any weather station are the sensors. The kind of data the weather station is capable to collect rely on the type of sensor selected. To this micro weather station I’ve selected the Bosch <strong>BME280</strong> sensor module.</p>
+
+<p><img src="http://localhost:4000/images/microweather/bme280.jpg" alt="" width="400" /></p>
+
+<p><del>BMP280 Module</del></p>
+
+<p>The <strong>BME280</strong> module reads barometric pressure, temperature, and humidity. The module uses I2C or SPI communication protocol to exchange data with a microcontroller.</p>
+
+<p>This sensor has high accuracy and low cost making it an ideal solution for precision pressure measurements of up to ± 1 hPa, temperature of up to ± 1.0 °C and humidity of up to ± 3%.</p>
+
+<p><strong>BME280 key features:</strong></p>
+
+<ul>
+  <li>Power supply: 3V</li>
+  <li>Temperature:  -40 to 85°C</li>
+  <li>Humidity:  0 to 100%</li>
+  <li>Pressure:  300 to 1100 hPa</li>
+  <li>Altitude:  0 to 30,000 ft</li>
+  <li>Communication: I2C and SPI Interface</li>
+</ul>
+
+<p>I2C protocol has been chosen to interface the *BME280** with the ESP-01 module, as it only requires 3 GPIO pins to work.</p>
+
+<h1 id="housing">Housing</h1>
+
+<p>To housing the weather station a custom 3D printed enclosure was designed. The enclosure design is based on the <em>Stevenson’s</em> screen which protect the internal electronics from the elements (rain, etc.), while expose the sensor to the outdoor temperature and humidity.</p>
+
+<p>The enclosure comprises of eight conical sections attached to a centre mounted base which holds the PCB and battery. A solar panel support and a mounting bracket were also designed.</p>
+
+<p>All enclosure components were printed using a FLSUN Q5 printer and normal PLA filament.</p>
+
+<p style="text-align:center"><img src="http://localhost:4000/images/microweather/house.png" alt="" width="600" /></p>
+
+<p style="padding:0; text-align: center; color:grey; font-size:0.8em; font-style:italic"> Weather station enclosure</p>
+
+<p>The STL and Freecad RAW 3D files for the enclosure are available <a href="">here</a>.</p>
+
+<blockquote>
+  <p>PS: At this time I don’t know how long the PLA enclosure will last under sunlight. I recommend it to be printed using another material more sunlight resistant.</p>
+</blockquote>
+
+<h1 id="putting-all-together">Putting all together</h1>
+
+<p>The bill of materials for this project is shown below:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Qty</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>ESP8266 ESP-01 WIFI module</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>BME280 sensor module</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>TC4056 USB changer module</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>MCP1700-3302E 3.3V regulator</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Samsung 18650 3.7V battery</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>18650 battery holder</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>180mm x 180mm solar panel</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>30mm x 70mm universal PCB</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Custom 3D printed enclosure</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2 way male JST connector</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2 way female JST connector</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Micro switch</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1000uF x 16V electrolytic capacitor</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>100nF Ceramic capacitors</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>3k3 1/8W resistor</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Jumpers, wires, connectors, etc.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Schematic</strong></p>
+
+<p>The figure below shows the weather station schematic. A high resolution PDF can be download <a href="">here</a>.</p>
+
+<p style="text-align:center"><a href="http://localhost:4000/images/microweather/schematic.png"><img src="http://localhost:4000/images/microweather/schematic.png" alt="" /></a></p>
+
+<p style="text-align: center; color:grey; font-size:0.8em; font-style:italic"> Weather station schematic </p>
+
+<p>The components were assembled on a universal PCB as shown below.</p>
+
+<p style="text-align:center"><img src="http://localhost:4000/images/microweather/pcb.png" alt="" width="800" /></p>
+
+<p style="padding:0; text-align: center; color:grey; font-size:0.8em; font-style:italic"> Assembled PCB </p>
+
+<p>PCB Layout was created using the <a href="">DIYLC Software</a>.</p>
+
+<p><img src="http://localhost:4000/images/microweather/pcb_bat.png" alt="" width="800" /></p>
+
+<p><del>PCB layout</del></p>
+
+<p><img src="http://localhost:4000/images/microweather/pcb_bat.png" alt="" width="800" /></p>
+
+<p style="padding:0; text-align: center; color:grey; font-size:0.8em; font-style:italic"> PCB and Battery on the base </p>
+
+<h1 id="code-code-code">Code, code, code</h1>
+
+<p>The code for the weather station was written in C for Arduino using Visual Studio Code Editor with PlatformIO. Full source code can be downloaded <a href="">here</a>.</p>
+
+<p>The station firmware uses three basic libraries:</p>
+
+<ul>
+  <li>BMx280I2C			(Read and process the BME280 sensor data)</li>
+  <li>ESP8266 Boards		(Support the ESP8266 microntroller hardware)</li>
+  <li>WiFiManager			(Easy way to setup the WIFI credentials)</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="cm">/**
+ * -- Include Libraries --
+ * 
+ * 
+*/</span>
+<span class="cp">#include &lt;EEPROM.h&gt;
+#include &lt;Arduino.h&gt;
+#include &lt;ESP8266WiFi.h&gt;
+#include &lt;WiFiManager.h&gt;
+</span><span class="p">...</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>The software basic workflow is to connect the ESP-01 to the internet via WIFI, read the sensor and transmit the data to the <a href="https://thingspeak.com">ThingSpeak Website</a> and then put the ESP-01 into deep sleep.</p>
+
+<p>Wifimanager allows to configure the AP connection of the ESP8266 to different access points (AP) without having to hard-code and upload the code every time you want to connect to a new AP. Also it can have custom fields to help to setup the Thingspeak details and configure the data publication/transmitt interval.</p>
+
+<p>Every time the unit is switched on or the reset button is pressed, it activates the Wifimanager during the first 1 minute to allow the user to configure the unit. After this one minute timeout the unit resumes to its normal operation. if there’s no Access Point data saved, the Wifimanager is kept open all the time to allow the WIFI credentials to be configured<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">2</a></sup>.</p>
+
+<hr />
+
+<h1 id="notes-and-references">Notes and references</h1>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:a" role="doc-endnote">
+      <p>Another 3.3V regulator can be used <a href="#fnref:a" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:1" role="doc-endnote">
+      <p>Test <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+                <hr>
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2022-04-01">01 Apr 2022</time></span>
+                
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#DIY">DIY</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#Electronic">Electronic</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#Microcontroller">Microcontroller</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#Projects">Projects</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#Wifi">Wifi</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    
+                    
+                </ul>
+            </div>
+            <!-- End Tags -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="/Qucstudio-on-MacOs/"> &laquo; Run QUCS Studio on MacOs</a>
+            
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'vandersonpc'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first:
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+
+</div>
+
+
+
+</div>
+
+<!-- Categories Jumbotron
+================================================== -->
+<hr>
+<div class="jumbotron-fluid fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            
+            
+                
+                    <a class="mt-1 mb-1" href="/categories#Data-Science">Data Science (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#Electronic">Electronic (8)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#Simulation">Simulation (3)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#Tools">Tools (4)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#Guides">Guides (2)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#Test-Equipment">Test Equipment (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#Projects">Projects (4)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#Microcontrollers">Microcontrollers (3)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#EMC">EMC (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#DIY">DIY (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#Microcontroller">Microcontroller (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#Wifi">Wifi (1)</a>
+                
+            
+            
+		</div>
+	</div>
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © 2022 by Vandersonpc
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts
+================================================== -->
+
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="/assets/js/mediumish.js"></script>
+
+
+
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+<script id="dsq-count-scr" src="//vandersonpc.disqus.com/count.js"></script>
+
+
+</body>
+</html>

@@ -6,7 +6,8 @@ author: Vanderson Carvalho
 categories: [Electronic, Projects, Microcontrollers, Tools]
 tags: [arduino, programmer]
 image: images/arduino_isp_fp.png
-show_image: True
+show_image: False
+comments: True
 ---
 This project shows how to use an Arduino Pro Mini as ISP (In Circuit Serial Programmer) device. This ISP can be used to programming Arduino boards as well ATMEL/Microchip AVR microcontrollers. 
 

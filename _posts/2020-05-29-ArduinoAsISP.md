@@ -6,7 +6,8 @@ categories: [Electronic, Microcontrollers, Tools]
 tags: [arduino, MacOs]
 image: images/arduino_isp_mac_fp.png
 author: Vanderson Carvalho
-show_image: True
+show_image: False
+comments: True
 ---
 
 This article shows how to use the Arduino Pro Mini as a ISP (In-Circuit Serial Programmer) for AVR microcontrollers or another Arduino board.
