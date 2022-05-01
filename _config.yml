@@ -65,7 +65,7 @@ jekyll-archives:
   permalinks:
     category: '/category/:name/'
 
-# Pagination
+## Pagination
 paginate: 6
 paginate_path: /page:num/
 
