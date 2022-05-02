@@ -29,14 +29,16 @@ The design premises for the weather stations are:
 As the main component of the weather station, the microcontroller needs to read the sensors, connect and transmit the data over the internet. For this task I've chosen the **ESP8266 ESP-01** due its flexibility, size and low cost.
 
 
-![]({{ site.url }}{% link images/microweather/esp-01.jpg %} ){: width="400"} 
+![]({{ site.url }}{% link images/microweather/esp-01.jpg %} ){: width="300"} 
+
 ~~ESP-01 Wifi module~~
 
 
 The **ESP-01** is a Self-contained SOC (System On a Chip) module based on the **ESP8266** microchip, which is a low-cost Wi-Fi microchip, with built-in TCP/IP networking software, and microcontroller capability. And best of all, fully compatible with Arduino development. 
 
 
-![]({{ site.url }}{% link images/microweather/esp8266.jpg %} ){: width="400"} 
+![]({{ site.url }}{% link images/microweather/esp8266.jpg %} ){: width="300"} 
+
 ~~ESP8266 integrated Circuit~~
 
 **ESP-01 Deep Sleep Mod**
@@ -54,7 +56,7 @@ After this mod the ESP-01 module will drawn less the **30uA** when in deep sleep
 
 To power the station I've chosen a **Samsung 18650** rechargeable battery, which can supply 3.6VDC @ 2500 mAh.
 
-![]({{ site.url }}{% link images/microweather/18650.jpg %} ){: width="400"} 
+![]({{ site.url }}{% link images/microweather/18650.png %} ){: width="200"} 
 
 ~~Samsung 18650 battery~~
 
@@ -365,7 +367,7 @@ The link for the station ThingSpeak channel is [https://thingspeak.com/channels/
 A mobile application called Thingview can also be used to access the live data of the station. 
 
 
-![]({{ site.url }}{% link images/microweather/thingview.png %} ){: width="400"} 
+![]({{ site.url }}{% link images/microweather/thingview.png %} ){: width="300"} 
 
 ~~Thingview mobile application~~
 
