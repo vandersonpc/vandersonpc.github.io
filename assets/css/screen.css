@@ -742,17 +742,26 @@ img {
     //margin-right: auto;
 }
 
-del {
-  //display: block;
-  //margin: auto;
-  text-align: center;
-  text-decoration: none;
-  padding:0;
-  color:grey;
-  font-size:0.8em;
-  font-style:italic
 
+img + em {
+      display: block;
+      //text-align: center;
+      text-decoration: none;
+      padding:0;
+      color:grey;
+      font-size:0.7em;
+      font-style:italic;
+      white-space: pre;
+    }
+
+a[rel="footnote"]:before {
+    content: "[";
 }
+
+a[rel="footnote"]:after {
+    content: "]";
+}
+
 .bottompagination span.navigation {
     display: block;
     font-size: 0.93rem;
