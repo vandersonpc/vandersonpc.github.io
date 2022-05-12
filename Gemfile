@@ -17,7 +17,7 @@ group :jekyll_plugins do
     gem 'jekyll-archives'
     gem 'kramdown'
     gem 'rouge'
-    gem 'jekyll-postfiles'
+  #  gem 'jekyll-postfiles'
     gem 'jekyll-gist'
 end
 
