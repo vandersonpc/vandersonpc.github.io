@@ -42,6 +42,20 @@ $mobile:  576px;
 	display:inline;
 }
 
+// Gist
+
+.gist {
+}
+
+.gist-data {
+		height: 350px;
+		overflow:auto;
+}
+
+.gist-meta {
+		font-size: 80% !important;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"syntax",
